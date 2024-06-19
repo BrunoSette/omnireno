@@ -1,64 +1,64 @@
 ---
 banner:
-  title: Let us solve your critical website development challenges
-  content: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nihil enim maxime corporis cumque <br/> totam aliquid nam sint inventore optio modi neque laborum officiis necessitatibus
-  image: /images/banner-art.png
+  title: Crafting Beautiful Spaces, Inside and Out
+  content: Quality Craftsmanship. Stunning Transformations. Lasting Impressions.
+  image: /images/living.jpg
   button:
     label: "Contact Us"
     link: "/contact"
     enable: true
 
 # feature
-feature: 
-  title: Something You Need To Know
+feature:
+  title: Services
   features:
-  - name: "Clean Code"
-    icon: "/images/code.svg"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
-  - name: "Object Oriented"
-    icon: "/images/oop.svg"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
-  - name: "24h Service"
-    icon: "/images/user-clock.svg"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
-  - name: "Value for Money"
-    icon: "/images/love.svg"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
-  - name: "Faster Response"
-    icon: "/images/speedometer.svg"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
-  - name: "Cloud Support"
-    icon: "/images/cloud.svg"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
+    - name: "Interior Painting"
+      icon: "/images/painting.svg"
+      content: "Residential and commercial interior painting, including walls, ceilings, trim, and doors."
+    - name: "Exterior Painting"
+      icon: "/images/painting-home.svg"
+      content: "Residential and commercial exterior painting, including walls, siding, fences, and decks."
+    - name: "Wallpaper Installation and Removal"
+      icon: "/images/wallpaper.svg"
+      content: "Professional wallpaper hanging and removal services."
+    - name: "Bathroom Remodeling"
+      icon: "/images/bathroom.svg"
+      content: "Complete bathroom remodels, including fixtures, tile work, and cabinetry."
+    - name: "Basement Finishing"
+      icon: "/images/basement.svg"
+      content: "Turning unfinished basements into livable spaces."
+    - name: "Drywall Installation and Repair"
+      icon: "/images/drywall.svg"
+      content: "Hanging, finishing, and repairing drywall."
 
 # services
 services:
-  - title: "It is the most advanced digital marketing and it company."
+  - title: "Portfolio"
     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
     images:
-      - "/images/service-slide-1.png"
-      - "/images/service-slide-2.png"
-      - "/images/service-slide-3.png"
+      - "/images/bathroom.jpg"
+      - "/images/kitchen.jpg"
+      - "/images/living.jpg"
     button:
       enable: true
       label: Check it out
       link: /contact
 
-  - title: "It is a privately owned Information and cyber security company"
+  - title: "Testimonials"
     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
-    images: 
-      - "/images/service-slide-1.png"
+    images:
+      - "/images/painting.jpg"
     button:
       enable: true
       label: Check it out
       link: /contact
-  
+
   - title: "It’s a team of experienced and skilled people with distributions"
     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
     images:
-      - "/images/service-slide-1.png"
-      - "/images/service-slide-2.png"
-      - "/images/service-slide-3.png"
+      - "/images/worker.jpg"
+      - "/images/worker2.jpg"
+      - "/images/worker3.jpg"
     button:
       enable: true
       label: Check it out
@@ -67,25 +67,25 @@ services:
   - title: "A company standing different from others"
     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
     images:
-      - "/images/service-slide-1.png"
-      - "/images/service-slide-2.png"
-      - "/images/service-slide-3.png"
+      - "/images/worker4.jpg"
+      - "/images/painter2.jpg"
+      - "/images/worker3.jpg"
     button:
       enable: true
       label: Check it out
       link: /contact
 
 # workflow
-workflow: 
+workflow:
   title: "Experience the best workflow with us"
-  image: "/images/banner.png"
+  image: "/images/happy.jpg"
   description: ""
 
 # call_to_action
 call_to_action:
   title: Ready to get started?
   content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur.
-  image: '/images/cta.png'
+  image: "/images/happy2.jpg"
   button:
     enable: true
     label: "Contact Us"

@@ -12,7 +12,7 @@ plans:
     - Customs Clearance
     - Time-Critical Services
   button:
-    label: Get started for free
+    label: Contact Us
     link: "/contact"
 
 - title: Professional Plan
@@ -27,7 +27,7 @@ plans:
     - Cloud Service
     - Best Dashboard
   button:
-    label: Get started
+    label: Contact Us
     link: "/contact"
 
 - title: Business Plan
@@ -39,7 +39,7 @@ plans:
     - Customs Clearance
     - Time-Critical Services
   button:
-    label: Get started
+    label: Contact Us
     link: "/contact"
 
 call_to_action:
