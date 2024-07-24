@@ -7,6 +7,7 @@ import Footer from "@/partials/Footer.astro";
 import Header from "@/partials/Header.astro";
 import "@/styles/main.scss";
 import { AstroFont } from "astro-font";
+import  SpeedInsights  from "@vercel/speed-insights/astro"
 import { ViewTransitions } from "astro:transitions";
 
 // font families
@@ -173,7 +174,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <main id="main-content">
       <slot />
     </main>
-    <Footer />
+<Footer />
+<SpeedInsights/>
 
   </body>
 </html>
