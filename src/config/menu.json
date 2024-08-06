@@ -1,21 +1,28 @@
 {
   "main": [
     {
-      "name": "Home",
-      "url": "/"
+      "name": "Painting",
+      "url": "painting"
     },
     {
-      "name": "Blog",
+      "name": "Bathrooms",
+      "url": "/bathrooms"
+    },
+    {
+      "name": "Kitchens",
+      "url": "/kitchens"
+    },
+    {
+      "name": "Basements",
+      "url": "/basements"
+    },
+    {
+      "name": "Portfolio",
       "url": "/blog"
     },
-
     {
-      "name": "Contact",
-      "url": "/contact"
-    },
-    {
-      "name": "FAQ",
-      "url": "/faq"
+      "name": "Testimonials",
+      "url": "/testimonials"
     }
   ],
   "footer": [
@@ -23,39 +30,47 @@
       "name": "Company",
       "menu": [
         {
-          "text": "Pricing",
-          "url": "/pricing"
+          "text": "Portfolio",
+          "url": "/blog"
         },
         {
-          "text": "Quick Start",
-          "url": "#"
+          "text": "Quotes",
+          "url": "/contact"
+        },
+        {
+          "text": "Testimonials",
+          "url": "/testimonials"
+        },
+        {
+          "text": "FAQ",
+          "url": "/faq"
         }
       ]
     },
     {
-      "name": "Product",
+      "name": "Services",
       "menu": [
         {
-          "text": "Features",
-          "url": "#"
+          "text": "Kitchens",
+          "url": "/kitchens"
         },
         {
-          "text": "Platform",
-          "url": "#"
+          "text": "Painting",
+          "url": "/painting"
         },
         {
-          "text": "Pricing",
-          "url": "/pricing"
+          "text": "Bathrooms",
+          "url": "/bathrooms"
+        },
+        {
+          "text": "Basements",
+          "url": "/basements"
         }
       ]
     },
     {
       "name": "Support",
       "menu": [
-        {
-          "text": "FAQ",
-          "url": "/faq"
-        },
         {
           "text": "Privacy Policy",
           "url": "/privacy-policy"
