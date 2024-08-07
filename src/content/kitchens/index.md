@@ -2,43 +2,20 @@
 banner:
   title: Transform Your Kitchen into the Heart of Your Home
   content: At NewCraft, we design and build beautiful, functional kitchens tailored to your style and needs. Whether you're updating, redesigning, or remodeling, our expert team provides quality craftsmanship and innovative solutions. Let us turn your kitchen into the heart of your home.
-  image: /images/living.jpg
+  image: /images/kitchen.jpg
   button:
     label: "Contact Us"
     link: "/contact"
     enable: true
-
-# feature
-feature:
-  title: Services
-  features:
-    - name: "Interior Painting"
-      icon: "/images/painting.svg"
-      content: "Residential and commercial interior painting, including walls, ceilings, trim, and doors."
-    - name: "Exterior Painting"
-      icon: "/images/painting-home.svg"
-      content: "Residential and commercial exterior painting, including walls, siding, fences, and decks."
-    - name: "Wallpaper Installation and Removal"
-      icon: "/images/wallpaper.svg"
-      content: "Professional wallpaper hanging and removal services."
-    - name: "Bathroom Remodeling"
-      icon: "/images/bathroom.svg"
-      content: "Complete bathroom remodels, including fixtures, tile work, and cabinetry."
-    - name: "Basement Finishing"
-      icon: "/images/basement.svg"
-      content: "Turning unfinished basements into livable spaces."
-    - name: "Drywall Installation and Repair"
-      icon: "/images/drywall.svg"
-      content: "Hanging, finishing, and repairing drywall."
 
 # services
 services:
   - title: "Portfolio"
     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
     images:
-      - "/images/bathroom.jpg"
-      - "/images/kitchen.jpg"
-      - "/images/living.jpg"
+      - "/images/kitchen.webp"
+      - "/images/kitchen3.webp"
+      - "/images/kitchen2.webp"
     button:
       enable: true
       label: Check it out
@@ -47,7 +24,9 @@ services:
   - title: "Testimonials"
     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
     images:
-      - "/images/painting.jpg"
+      - "/images/kitchen.webp"
+      - "/images/kitchen3.webp"
+      - "/images/kitchen2.webp"
     button:
       enable: true
       label: Check it out

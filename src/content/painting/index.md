@@ -13,11 +13,10 @@ services:
   - title: "Portfolio"
     content: "Our recent projects highlight our expertise and attention to detail. We've transformed a historic office with a modern palette and refreshed a cozy home with warm tones. Each project showcases our commitment to quality and leaves spaces that are beautiful and tailored to our clients' tastes."
     images:
-      - "/images/bathroom.jpg"
-      - "/images/kitchen.jpg"
-      - "/images/living.jpg"
+      - "/images/kitchen3.webp"
+      - "/images/basement4.webp"
     button:
-      enable: true
+      enable: false
       label: Check it out
       link: /contact
 
@@ -26,7 +25,7 @@ services:
     images:
       - "/images/painting.jpg"
     button:
-      enable: true
+      enable: false
       label: Check it out
       link: /contact
 
@@ -37,7 +36,7 @@ services:
       - "/images/worker2.jpg"
       - "/images/worker3.jpg"
     button:
-      enable: true
+      enable: false
       label: Check it out
       link: /contact
 

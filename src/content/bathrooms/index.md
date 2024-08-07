@@ -1,44 +1,21 @@
 ---
 banner:
   title: Revitalize Your Bathroom with Elegant Renovations
-  content: At NewCraft, we turn outdated bathrooms into luxurious, functional spaces. Whether you need a sleek, modern makeover or a timeless, classic redesign, our team delivers high-quality craftsmanship and personalized designs. Let us create a bathroom that enhances your daily routine and adds value to your home.
-  image: /images/living.jpg
+  content: At NewCraft, we turn outdated bathrooms into luxurious, functional spaces. Whether you need a sleek, modern makeover or a timeless, classic redesign, our team delivers high-quality craftsmanship and personalized designs. **Let us create a bathroom that enhances your daily routine and adds value to your home.**
+  image: /images/bathroom6.webp
   button:
     label: "Contact Us"
     link: "/contact"
     enable: true
-
-# feature
-feature:
-  title: Services
-  features:
-    - name: "Interior Painting"
-      icon: "/images/painting.svg"
-      content: "Residential and commercial interior painting, including walls, ceilings, trim, and doors."
-    - name: "Exterior Painting"
-      icon: "/images/painting-home.svg"
-      content: "Residential and commercial exterior painting, including walls, siding, fences, and decks."
-    - name: "Wallpaper Installation and Removal"
-      icon: "/images/wallpaper.svg"
-      content: "Professional wallpaper hanging and removal services."
-    - name: "Bathroom Remodeling"
-      icon: "/images/bathroom.svg"
-      content: "Complete bathroom remodels, including fixtures, tile work, and cabinetry."
-    - name: "Basement Finishing"
-      icon: "/images/basement.svg"
-      content: "Turning unfinished basements into livable spaces."
-    - name: "Drywall Installation and Repair"
-      icon: "/images/drywall.svg"
-      content: "Hanging, finishing, and repairing drywall."
 
 # services
 services:
   - title: "Portfolio"
     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
     images:
-      - "/images/bathroom.jpg"
-      - "/images/kitchen.jpg"
-      - "/images/living.jpg"
+      - "/images/bathroom5.webp"
+      - "/images/bathroom3.webp"
+      - "/images/bathroom4.webp"
     button:
       enable: true
       label: Check it out

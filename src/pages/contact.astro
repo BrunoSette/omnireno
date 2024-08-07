@@ -15,12 +15,7 @@ const { title, description, info } = entry?.data;
       <h1 class="text-center font-normal" set:html={markdownify(title)} />
       <div class="section row pb-0">
         <div class="col-12 md:col-6 lg:col-7">
-         <form class="contact-form" method="POST" action={contact_form_action}>
-          <input type="hidden" name="_next" value="https://newcraftreno.vercel.app/">
-          <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_subject" value="New lead!">
-
-
+<form class="contact-form" method="POST" action={contact_form_action}>
   <div class="mb-3">
     <input
       class="form-input w-full rounded"
@@ -39,7 +34,6 @@ const { title, description, info } = entry?.data;
       required
     />
   </div>
-
   <div class="mb-3">
     <input
       class="form-input w-full rounded"
@@ -49,27 +43,15 @@ const { title, description, info } = entry?.data;
     />
   </div>
 
-<div class="flex space-x-4 mb-3">
-    <label class="flex items-center">
-      <input type="checkbox" name="services" value="Painting" class="mr-2" />
-      Painting
-    </label>
-    <label class="flex items-center">
-      <input type="checkbox" name="services" value="Kitchen" class="mr-2" />
-      Kitchen
-    </label>
-    <label class="flex items-center">
-      <input type="checkbox" name="services" value="Bathroom" class="mr-2" />
-      Bathroom
-    </label>
-    <label class="flex items-center">
-      <input type="checkbox" name="services" value="Basement" class="mr-2" />
-      Basement
-    </label>
-     <label class="flex items-center">
-      <input type="checkbox" name="services" value="Other" class="mr-2" />
-      Other
-    </label>
+  <div class="mb-3">
+    <label class="block mb-2" for="services">Services:</label>
+    <select id="services" name="services" class="form-select w-full rounded">
+      <option value="Basement">Basement</option>
+      <option value="Bathroom">Bathroom</option>
+      <option value="Kitchen">Kitchen</option>
+      <option value="Painting">Painting</option>
+      <option value="Other">Other</option>
+    </select>
   </div>
   <div class="mb-3">
     <label class="block mb-2" for="budget">Budget:</label>
@@ -86,9 +68,9 @@ const { title, description, info } = entry?.data;
     <textarea
       class="form-textarea w-full rounded-md"
       rows="7"
-      placeholder="Please provide any details or questions you have about our services, and we'll respond promptly."></textarea>
+      placeholder="Please provide any details or questions you have about your services, and we'll respond promptly."></textarea>
   </div>
-  <button type="submit" class="btn btn-primary"> Send Now</button>
+  <button type="submit" class="btn btn-primary">Send Now</button>
 </form>
         </div>
         <div class="content col-12 md:col-6 lg:col-5">

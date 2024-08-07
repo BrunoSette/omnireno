@@ -2,43 +2,20 @@
 banner:
   title: Unlock the Potential of Your Basement with Legal Renovations
   content: NewCraft specializes in transforming basements into beautiful, legal living spaces. Whether you're looking to create an extra bedroom, a cozy family area, or a rental suite, our expert team ensures your renovation meets all legal requirements and maximizes your home's value. Trust us to deliver quality craftsmanship and a seamless renovation experience.
-  image: /images/living.jpg
+  image: /images/basement4.webp
   button:
     label: "Contact Us"
     link: "/contact"
     enable: true
 
-# feature
-feature:
-  title: Services
-  features:
-    - name: "Interior Painting"
-      icon: "/images/painting.svg"
-      content: "Residential and commercial interior painting, including walls, ceilings, trim, and doors."
-    - name: "Exterior Painting"
-      icon: "/images/painting-home.svg"
-      content: "Residential and commercial exterior painting, including walls, siding, fences, and decks."
-    - name: "Wallpaper Installation and Removal"
-      icon: "/images/wallpaper.svg"
-      content: "Professional wallpaper hanging and removal services."
-    - name: "Bathroom Remodeling"
-      icon: "/images/bathroom.svg"
-      content: "Complete bathroom remodels, including fixtures, tile work, and cabinetry."
-    - name: "Basement Finishing"
-      icon: "/images/basement.svg"
-      content: "Turning unfinished basements into livable spaces."
-    - name: "Drywall Installation and Repair"
-      icon: "/images/drywall.svg"
-      content: "Hanging, finishing, and repairing drywall."
-
-# services
+# Portfolio
 services:
   - title: "Portfolio"
     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
     images:
-      - "/images/bathroom.jpg"
-      - "/images/kitchen.jpg"
-      - "/images/living.jpg"
+      - "/images/basement.webp"
+      - "/images/basement3.webp"
+      - "/images/basement2.webp"
     button:
       enable: true
       label: Check it out

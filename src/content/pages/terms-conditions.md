@@ -1,29 +1,67 @@
 ---
-title: "Terms and Conditions"
-description: "this is meta description"
+title: Terms and Conditions
 draft: false
 ---
 
-#### Responsibility of Contributors
+**Effective Date:** [Insert Date]
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat quisque aliquam sagittis. Sem turpis sed viverra massa gravida pharetra. Non dui dolor potenti eu dignissim fusce. Ultrices amet, in curabitur a arcu a lectus morbi id. Iaculis erat sagittis in tortor cursus. Molestie urna eu tortor, erat scelerisque eget. Nunc hendrerit sed interdum lacus. Lorem quis viverra sed
+**1. Introduction**
 
-pretium, aliquam sit. Praesent elementum magna amet, tincidunt eros, nibh in leo. Malesuada purus, lacus, at aliquam suspendisse tempus. Quis tempus amet, velit nascetur sollicitudin. At sollicitudin eget amet in. Eu velit nascetur sollicitudin erhdfvssfvrgss eget viverra nec elementum. Lacus, facilisis tristique lectus in.
+Welcome to NewCraft. These Terms and Conditions govern your use of our website and services. By accessing or using our website and services, you agree to comply with and be bound by these terms. If you do not agree with these terms, please do not use our website or services.
 
-#### Gathering of Personal Information
+**2. Services**
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat quisque aliquam sagittis. Sem turpis sed viverra massa gravida pharetra. Non dui dolor potenti eu dignissim fusce. Ultrices amet, in curabitur a arcu a lectus morbi id. Iaculis erat sagittis in tortor cursus. Molestie urna eu tortor, erat scelerisque eget. Nunc hendrerit sed interdum lacus. Lorem quis viverra sed
+NewCraft provides renovation services for kitchens, bathrooms, and basements. The details of our services, including pricing and scope, are outlined in the specific agreement for each project.
 
-#### Protection of Personal- Information
+**3. Quotes and Contracts**
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat quisque aliquam sagittis. Sem turpis sed viverra massa gravida pharetra. Non dui dolor potenti eu dignissim fusce. Ultrices amet, in curabitur a arcu a lectus morbi id. Iaculis erat sagittis in tortor cursus.
+All quotes provided by NewCraft are free and non-binding. A formal contract outlining the scope, cost, and timeline of the project will be provided and must be signed before work commences. Any changes to the agreed-upon scope or cost will require a written agreement from both parties.
 
-Molestie urna eu tortor, erat scelerisque eget. Nunc hendrerit sed interdum lacus. Lorem quis viverra sed
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat
+**4. Payment Terms**
 
-#### Privacy Policy Changes
+Payments for our services are due as specified in the contract. Failure to make timely payments may result in delays in project completion. NewCraft reserves the right to suspend or terminate services if payments are not made as agreed.
 
-1. Sll the Themefisher items are designed to be with the latest , We check all
-2. comments that threaten or harm the reputation of any person or organization
-3. personal information including, but limited to, email addresses, telephone numbers
-4. Any Update come in The technology Customer will get automatic Notification.
+**5. Client Responsibilities**
+
+Clients are responsible for:
+
+- Providing accurate information about the property and project requirements.
+- Ensuring the work area is accessible and free from hazards.
+- Removing valuable items from the work area to prevent damage.
+
+**6. Warranties and Guarantees**
+
+NewCraft guarantees the quality of our workmanship and materials for a specified period, as detailed in the contract. We will repair or replace any defective work or materials during this period at no additional cost. This warranty does not cover damage caused by client actions, normal wear and tear, or factors beyond our control.
+
+**7. Limitation of Liability**
+
+To the maximum extent permitted by law, NewCraft shall not be liable for any indirect, incidental, or consequential damages arising from the use of our services. Our liability is limited to the amount paid by the client for the specific service provided.
+
+**8. Intellectual Property**
+
+All content on our website, including text, images, and graphics, is the property of NewCraft or its licensors and is protected by copyright and other intellectual property laws. You may not use, reproduce, or distribute any content from our website without our prior written permission.
+
+**9. Privacy Policy**
+
+Your use of our website and services is also governed by our Privacy Policy, which can be found [here](/privacy-policy). Please review our Privacy Policy to understand our practices regarding your personal information.
+
+**10. Changes to Terms and Conditions**
+
+NewCraft reserves the right to update or modify these Terms and Conditions at any time. We will notify you of any changes by posting the new terms on our website. Your continued use of our services after such changes constitutes your acceptance of the updated Terms and Conditions.
+
+**11. Governing Law**
+
+These Terms and Conditions are governed by and construed in accordance with the laws of [Your Jurisdiction]. Any disputes arising from these terms or your use of our services shall be resolved in the courts of [Your Jurisdiction].
+
+**12. Contact Us**
+
+If you have any questions or concerns about these Terms and Conditions, please contact us at:
+
+NewCraft  
+[Your Company Address]  
+[Your Company Phone Number]  
+[Your Company Email Address]
+
+---
+
+_These Terms and Conditions were last updated on [Insert Date]._
