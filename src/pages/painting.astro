@@ -10,7 +10,7 @@ const { banner, feature, services, workflow, call_to_action } = homepage.data;
 ---
 
 <Base>
-  <!-- banner -->
+  <!-- Header -->
   <section class="section pb-[50px]">
     <div class="container">
       <div class="row text-center">
@@ -35,9 +35,10 @@ const { banner, feature, services, workflow, call_to_action } = homepage.data;
               <Image
                 class="mx-auto mt-12"
                 src={banner?.image}
+                loading="eager"
                 width={750}
                 height={390}
-                alt="banner image"
+                alt="painter"
               />
             )
           }
@@ -46,42 +47,7 @@ const { banner, feature, services, workflow, call_to_action } = homepage.data;
     </div>
   </section>
 
-  <!-- Features -->
-  <section class="section bg-theme-light">
-    <div class="container">
-      <div class="text-center">
-        <h2>{markdownify(feature!.title)}</h2>
-      </div>
-      <div class="mt-8 grid gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-3">
-        {
-          feature!.features.map((item: any, i: number) => (
-            <div class="feature-card rounded-xl bg-white p-5 pb-8 text-center">
-              {item.icon && (
-                // <Image
-                //   class="mx-auto"
-                //   src={item.icon}
-                //   width={30}
-                //   height={30}
-                //   alt=""
-                // />
-                <img
-                  class="mx-auto"
-                  alt={item.icon}
-                  src={item.icon}
-                  width={30}
-                  height={30}
-                />
-              )}
-              <div class="mt-4">
-                <p class="h5" set:html={markdownify(item!.name)} />
-                <p class="mt-3">{item.content}</p>
-              </div>
-            </div>
-          ))
-        }
-      </div>
-    </div>
-  </section>
+
 
   <!-- Services -->
   {
@@ -100,6 +66,7 @@ const { banner, feature, services, workflow, call_to_action } = homepage.data;
                           <Image
                             class="mx-auto"
                             src={image}
+                            loading="eager"
                             width={538}
                             height={328}
                             alt=""
@@ -112,6 +79,7 @@ const { banner, feature, services, workflow, call_to_action } = homepage.data;
                 ) : (
                   <Image
                     class="mx-auto"
+                    loading="eager"
                     src={service!.images![0]}
                     width={538}
                     height={328}
@@ -136,6 +104,7 @@ const { banner, feature, services, workflow, call_to_action } = homepage.data;
                       class="ml-1"
                       src="/images/arrow-right.svg"
                       width={18}
+                      loading="eager"
                       height={14}
                       alt="arrow"
                     />
@@ -184,6 +153,7 @@ const { banner, feature, services, workflow, call_to_action } = homepage.data;
     <Image
       src={workflow!.image}
       alt="workflow image"
+      loading="eager"
       width={1920}
       height={414}
     />

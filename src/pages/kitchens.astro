@@ -5,8 +5,8 @@ import Cta from "@/layouts/components/Cta.astro";
 import { markdownify } from "@/lib/utils/textConverter";
 import { getEntryBySlug } from "astro:content";
 
-const homepage = await getEntryBySlug("kitchens", "index");
-const { banner, feature, services, workflow, call_to_action } = homepage.data;
+const kitchens = await getEntryBySlug("kitchens", "index");
+const { banner, feature, services, workflow, call_to_action } = kitchens.data;
 ---
 
 <Base>
@@ -37,7 +37,7 @@ const { banner, feature, services, workflow, call_to_action } = homepage.data;
                 src={banner?.image}
                 width={750}
                 height={390}
-                alt="banner image"
+                alt="kitchen"
               />
             )
           }
@@ -57,13 +57,6 @@ const { banner, feature, services, workflow, call_to_action } = homepage.data;
           feature!.features.map((item: any, i: number) => (
             <div class="feature-card rounded-xl bg-white p-5 pb-8 text-center">
               {item.icon && (
-                // <Image
-                //   class="mx-auto"
-                //   src={item.icon}
-                //   width={30}
-                //   height={30}
-                //   alt=""
-                // />
                 <img
                   class="mx-auto"
                   alt={item.icon}

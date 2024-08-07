@@ -15,42 +15,81 @@ const { title, description, info } = entry?.data;
       <h1 class="text-center font-normal" set:html={markdownify(title)} />
       <div class="section row pb-0">
         <div class="col-12 md:col-6 lg:col-7">
-          <form class="contact-form" method="POST" action={contact_form_action}>
-            <div class="mb-3">
-              <input
-                class="form-input w-full rounded"
-                name="name"
-                type="text"
-                placeholder="Name"
-                required
-              />
-            </div>
-            <div class="mb-3">
-              <input
-                class="form-input w-full rounded"
-                name="email"
-                type="email"
-                placeholder="Your email"
-                required
-              />
-            </div>
-            <div class="mb-3">
-              <input
-                class="form-input w-full rounded"
-                name="subject"
-                type="text"
-                placeholder="Subject"
-                required
-              />
-            </div>
-            <div class="mb-3">
-              <textarea
-                class="form-textarea w-full rounded-md"
-                rows="7"
-                placeholder="Your message"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary"> Send Now</button>
-          </form>
+         <form class="contact-form" method="POST" action={contact_form_action}>
+          <input type="hidden" name="_next" value="https://newcraftreno.vercel.app/">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_subject" value="New lead!">
+
+
+  <div class="mb-3">
+    <input
+      class="form-input w-full rounded"
+      name="name"
+      type="text"
+      placeholder="Name"
+      required
+    />
+  </div>
+  <div class="mb-3">
+    <input
+      class="form-input w-full rounded"
+      name="email"
+      type="email"
+      placeholder="Your email"
+      required
+    />
+  </div>
+
+  <div class="mb-3">
+    <input
+      class="form-input w-full rounded"
+      name="subject"
+      type="tel"
+      placeholder="Phone Number"
+    />
+  </div>
+
+<div class="flex space-x-4 mb-3">
+    <label class="flex items-center">
+      <input type="checkbox" name="services" value="Painting" class="mr-2" />
+      Painting
+    </label>
+    <label class="flex items-center">
+      <input type="checkbox" name="services" value="Kitchen" class="mr-2" />
+      Kitchen
+    </label>
+    <label class="flex items-center">
+      <input type="checkbox" name="services" value="Bathroom" class="mr-2" />
+      Bathroom
+    </label>
+    <label class="flex items-center">
+      <input type="checkbox" name="services" value="Basement" class="mr-2" />
+      Basement
+    </label>
+     <label class="flex items-center">
+      <input type="checkbox" name="services" value="Other" class="mr-2" />
+      Other
+    </label>
+  </div>
+  <div class="mb-3">
+    <label class="block mb-2" for="budget">Budget:</label>
+    <select id="budget" name="budget" class="form-select w-full rounded">
+      <option value="Under $10k">Under $10k</option>
+      <option value="$10k - $30k">$10k - $30k</option>
+      <option value="$30k - $50k">$30k - $50k</option>
+      <option value="$50k - $100k">$50k - $100k</option>
+      <option value="$100k - $200k">$100k - $200k</option>
+      <option value="Over $200k">Over $200k</option>
+    </select>
+  </div>
+  <div class="mb-3">
+    <textarea
+      class="form-textarea w-full rounded-md"
+      rows="7"
+      placeholder="Please provide any details or questions you have about our services, and we'll respond promptly."></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary"> Send Now</button>
+</form>
         </div>
         <div class="content col-12 md:col-6 lg:col-5">
           <h4 set:html={markdownify(info?.title)} />
