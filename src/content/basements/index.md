@@ -1,4 +1,5 @@
 ---
+title: "Basements Renovations"
 banner:
   title: Unlock the Potential of Your Basement with Legal Renovations
   content: NewCraft specializes in transforming basements into beautiful, legal living spaces. Whether you're looking to create an extra bedroom, a cozy family area, or a rental suite, our expert team ensures your renovation meets all legal requirements and maximizes your home's value. Trust us to deliver quality craftsmanship and a seamless renovation experience.

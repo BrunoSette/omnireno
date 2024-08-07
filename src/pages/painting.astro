@@ -6,10 +6,10 @@ import { markdownify } from "@/lib/utils/textConverter";
 import { getEntryBySlug } from "astro:content";
 
 const homepage = await getEntryBySlug("painting", "index");
-const { banner, feature, services, workflow, call_to_action } = homepage.data;
+const { banner, services, workflow, call_to_action } = homepage.data;
 ---
 
-<Base>
+<Base title={homepage.data.title}>
   <!-- Header -->
   <section class="section pb-[50px]">
     <div class="container">

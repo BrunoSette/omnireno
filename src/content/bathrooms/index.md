@@ -1,4 +1,5 @@
 ---
+title: "Bathrooms Renovations"
 banner:
   title: Revitalize Your Bathroom with Elegant Renovations
   content: At NewCraft, we turn outdated bathrooms into luxurious, functional spaces. Whether you need a sleek, modern makeover or a timeless, classic redesign, our team delivers high-quality craftsmanship and personalized designs. **Let us create a bathroom that enhances your daily routine and adds value to your home.**

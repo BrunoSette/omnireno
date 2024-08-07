@@ -9,7 +9,7 @@ const kitchens = await getEntryBySlug("kitchens", "index");
 const { banner, feature, services, workflow, call_to_action } = kitchens.data;
 ---
 
-<Base>
+<Base title={kitchens.data.title}>
   <!-- banner -->
   <section class="section pb-[50px]">
     <div class="container">

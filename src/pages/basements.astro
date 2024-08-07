@@ -9,7 +9,7 @@ const homepage = await getEntryBySlug("basements", "index");
 const { banner, feature, services, workflow, call_to_action } = homepage.data;
 ---
 
-<Base>
+<Base title={homepage.data.title}>
   <!-- banner -->
   <section class="section pb-[50px]">
     <div class="container">
