@@ -1,7 +1,7 @@
 ---
 banner:
   title: "Expert Renovations for Your Dream Home"
-  content: At NewCraft, we pride ourselves on delivering exceptional renovations you can trust. **With a commitment to quality craftsmanship and transparent communication, we transform your home with integrity and care.** Whether it's a kitchen, bathroom, or basement, trust us to bring your vision to life with precision and professionalism.
+  content: At OmniReno, we pride ourselves on delivering exceptional renovations you can trust. **With a commitment to quality craftsmanship and transparent communication, we transform your home with integrity and care.** Whether it's a kitchen, bathroom, or basement, trust us to bring your vision to life with precision and professionalism.
   image: /images/living.jpg
   button:
     label: "Contact Us"

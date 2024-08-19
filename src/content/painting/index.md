@@ -1,10 +1,10 @@
 ---
 title: "Painting Renovations"
-Description: "Transform Your Space with Expert Painting Services"ock the Potential of Your Basement with Legal Renovations"
+Description: "Transform Your Space with Expert Painting Services"
 
 banner:
   title: Transform Your Space with Expert Painting Services
-  content: At NewCraft we specialize in bringing color and vibrancy to your home or business. Our team of professional painters delivers **exceptional craftsmanship**, whether you're looking for a fresh coat of paint to refresh your space or a complete transformation with a new color scheme. With a focus on quality, precision, and customer satisfaction, we take pride in enhancing the beauty and value of your property. Let us make your vision a reality!
+  content: At OmniReno we specialize in bringing color and vibrancy to your home or business. Our team of professional painters delivers **exceptional craftsmanship**, whether you're looking for a fresh coat of paint to refresh your space or a complete transformation with a new color scheme. With a focus on quality, precision, and customer satisfaction, we take pride in enhancing the beauty and value of your property. Let us make your vision a reality!
   image: /images/painter.jpg
   button:
     label: "Get a free quote now"

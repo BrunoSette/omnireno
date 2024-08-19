@@ -4,7 +4,7 @@ description: "Transform Your Kitchen into the Heart of Your Home"
 
 banner:
   title: Transform Your Kitchen into the Heart of Your Home
-  content: At NewCraft, we design and build beautiful, functional kitchens tailored to your style and needs. Whether you're updating, redesigning, or remodeling, our expert team provides quality craftsmanship and innovative solutions. Let us turn your kitchen into the heart of your home.
+  content: At OmniReno, we design and build beautiful, functional kitchens tailored to your style and needs. Whether you're updating, redesigning, or remodeling, our expert team provides quality craftsmanship and innovative solutions. Let us turn your kitchen into the heart of your home.
   image: /images/kitchen.jpg
   button:
     label: "Contact Us"

@@ -7,7 +7,7 @@ draft: false
 
 **1. Introduction**
 
-At NewCraft, we value your privacy and are committed to protecting your personal information. This Privacy Policy outlines the types of information we collect, how we use it, and the steps we take to safeguard your data.
+At OmniReno, we value your privacy and are committed to protecting your personal information. This Privacy Policy outlines the types of information we collect, how we use it, and the steps we take to safeguard your data.
 
 **2. Information We Collect**
 

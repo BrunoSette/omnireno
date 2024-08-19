@@ -1,6 +1,6 @@
 {
   "site": {
-    "title": "NewCraft Reno and Painting",
+    "title": "OmniReno Reno and Painting",
     "base_url": "https://bigspring-light-astro.vercel.app",
     "base_path": "/",
     "trailing_slash": false,
@@ -8,7 +8,7 @@
     "logo": "/images/Logo-lateral-pequena.png",
     "logo_width": "200",
     "logo_height": "38",
-    "logo_text": "NewCraft"
+    "logo_text": "OmniReno"
   },
 
   "settings": {
@@ -27,7 +27,7 @@
     "contact_form_action": "https://formsubmit.co/brunosette@gmail.com",
     "tag_manager_id": "",
     "footer_content": "Bringing Color and Quality to Your Space",
-    "copyright": "NewCraft Painting and Renovations"
+    "copyright": "OmniReno Painting and Renovations"
   },
 
   "metadata": {
