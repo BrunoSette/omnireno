@@ -1,13 +1,13 @@
 {
   "site": {
-    "title": "OmniReno Reno and Painting",
+    "title": "OmniReno",
     "base_url": "https://bigspring-light-astro.vercel.app",
     "base_path": "/",
     "trailing_slash": false,
-    "favicon": "/images/favicon.png",
-    "logo": "/images/Logo-lateral-pequena.png",
+    "favicon": "/images/favicon.ico",
+    "logo": "/images/omnireno.png",
     "logo_width": "200",
-    "logo_height": "38",
+    "logo_height": "60",
     "logo_text": "OmniReno"
   },
 
@@ -33,6 +33,6 @@
   "metadata": {
     "meta_author": "Bruno Sette",
     "meta_image": "/images/og-image.png",
-    "meta_description": "astro boilerplate"
+    "meta_description": "omnireno painting and renovations"
   }
 }
