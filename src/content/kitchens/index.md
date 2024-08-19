@@ -1,5 +1,6 @@
 ---
 title: "Kitchens Renovations"
+description: "Transform Your Kitchen into the Heart of Your Home"
 
 banner:
   title: Transform Your Kitchen into the Heart of Your Home

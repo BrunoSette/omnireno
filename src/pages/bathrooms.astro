@@ -9,8 +9,8 @@ const homepage = await getEntryBySlug("bathrooms", "index");
 const { banner, services, workflow, call_to_action } = homepage.data;
 ---
 
-<Base title={homepage.data.title}>
-  <!-- banner -->
+<Base title={homepage.data.title} description={homepage.data.description}>
+    <!-- banner -->
   <section class="section pb-[50px]">
     <div class="container">
       <div class="row text-center">

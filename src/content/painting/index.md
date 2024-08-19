@@ -1,5 +1,6 @@
 ---
 title: "Painting Renovations"
+Description: "Transform Your Space with Expert Painting Services"ock the Potential of Your Basement with Legal Renovations"
 
 banner:
   title: Transform Your Space with Expert Painting Services
