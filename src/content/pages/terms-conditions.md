@@ -3,7 +3,7 @@ title: Terms and Conditions
 draft: false
 ---
 
-**Effective Date:** [Insert Date]
+**Effective Date: 08/20/2024**
 
 **1. Introduction**
 
@@ -57,11 +57,11 @@ These Terms and Conditions are governed by and construed in accordance with the 
 
 If you have any questions or concerns about these Terms and Conditions, please contact us at:
 
-OmniReno  
-[Your Company Address]  
-[Your Company Phone Number]  
-[Your Company Email Address]
+OmniReno Inc.  
+24 The Links Road, Toronto, Unit 214
+Phone: 1(437)980-2714  
+admin@omnireno.ca
 
 ---
 
-_These Terms and Conditions were last updated on [Insert Date]._
+_These Terms and Conditions were last updated on 08/20/2024._
