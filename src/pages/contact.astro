@@ -74,19 +74,8 @@ const { title, description, info } = entry?.data;
   <button type="submit" class="btn btn-primary">Send Now</button>
 </form> -->
 <div class="pipedriveWebForms" data-pd-webforms="https://webforms.pipedrive.com/f/ckvTIYGskx8qOSYEby5s5WBBwFT7wZ1uWQsO2BBmi9HfxMGHoshqQO5nVEnDvCkxEv">
-
-<script src="https://webforms.pipedrive.com/f/loader">
-
-
-</script>
-
-     <script>
-          gtag('event', 'form_submit', {
-                    'event_category': 'form',
-                    'event_label': 'Pipedrive Form',
-                    'value': 1
-                  });
-          </script></div>
+<script src="https://webforms.pipedrive.com/f/loader"></script>
+   </div>
         </div>
         <div class="content col-12 md:col-6 lg:col-5">
           <h4 set:html={markdownify(info?.title)} />
