@@ -13,20 +13,6 @@ const { Content } = await entry.render();
         <div class="text-center">
           <h1 class="mb-4" set:html={markdownify(entry.data.title)} />
           <Content />
-          <!-- Google tag (gtag.js) event -->
-<!-- <script>
-  gtag('event', 'ads_conversion_PAGE_VIEW_1', {
-  });
-
-</script> -->
-<!-- Google tag (gtag.js) event -->
-<script>
-  gtag('event', 'conversion_event_submit_lead_form', {
-    // <event_parameters>
-  });
-</script>
-
-
         </div>
       </div>
     </div>
