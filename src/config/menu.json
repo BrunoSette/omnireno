@@ -1,21 +1,22 @@
 {
   "main": [
     {
-      "name": "Painting",
-      "url": "painting"
-    },
-    {
       "name": "Bathrooms",
       "url": "/bathrooms"
+    },
+    {
+      "name": "Basements",
+      "url": "/basements"
     },
     {
       "name": "Kitchens",
       "url": "/kitchens"
     },
     {
-      "name": "Basements",
-      "url": "/basements"
+      "name": "Painting",
+      "url": "painting"
     },
+
     {
       "name": "Testimonials",
       "url": "/testimonials"
@@ -25,10 +26,6 @@
     {
       "name": "Company",
       "menu": [
-        {
-          "text": "Portfolio",
-          "url": "/blog"
-        },
         {
           "text": "Quotes",
           "url": "/contact"
