@@ -13,58 +13,57 @@ banner:
 
 # services
 services:
-  - title: "Portfolio"
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
+  - title: "Why Choose OmniReno?"
+    content: "OmniReno combines years of experience with a dedication to quality, ensuring your bathroom renovation is handled with care and precision. We use top-tier materials and work closely with you to deliver a beautiful, functional space that exceeds expectations, on time and within budget."
     images:
       - "/images/bathroom5.webp"
       - "/images/bathroom3.webp"
       - "/images/bathroom4.webp"
+      - "/images/bathroom7.jpg"
+      - "/images/bathroom8.jpg"
     button:
       enable: true
-      label: Check it out
+      label: GET A FREE QUOTE
       link: /contact
 
-  - title: "Testimonials"
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
+  - title: "Our Process"
+    content: "At OmniReno, we make bathroom renovation seamless. It begins with a personalized consultation to understand your vision, followed by expert design and detailed planning. Our skilled team then brings your ideas to life with precision and care, ensuring minimal disruption. We finish with a thorough inspection, leaving you with a beautifully transformed bathroom, ready for you to enjoy."
     images:
-      - "/images/painting.jpg"
+      - "/images/blueprint.jpg"
     button:
-      enable: true
+      enable: false
       label: Check it out
       link: /contact
 
   - title: "It’s a team of experienced and skilled people with distributions"
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
+    content: "Our team at OmniReno is composed of experienced and skilled professionals, each bringing their unique expertise to every project. With specialists in design, construction, and project management, we ensure that every aspect of your renovation is handled with precision and care. Our distributed approach allows us to streamline the process, combining the strengths of our team members to deliver exceptional results that meet your exact needs and expectations."
     images:
-      - "/images/worker.jpg"
-      - "/images/worker2.jpg"
       - "/images/worker3.jpg"
     button:
-      enable: true
+      enable: false
       label: Check it out
       link: /contact
 
   - title: "A company standing different from others"
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
+    content: "At OmniReno, we stand apart from the competition by placing trust and customer satisfaction at the heart of everything we do. Our commitment to integrity means you can count on us to deliver honest, transparent service from start to finish. We prioritize your needs, ensuring that every project reflects your vision and exceeds your expectations. With OmniReno, you’re not just another client—you’re a valued partner in creating a space you’ll love for years to come."
     images:
       - "/images/worker4.jpg"
       - "/images/painter2.jpg"
-      - "/images/worker3.jpg"
     button:
-      enable: true
+      enable: false
       label: Check it out
       link: /contact
 
 # workflow
-workflow:
-  title: "Experience the best workflow with us"
-  image: "/images/happy.jpg"
-  description: ""
+# workflow:
+#   title: "Experience the best workflow with us"
+#   image: "/images/happy.jpg"
+#   description: ""
 
 # call_to_action
 call_to_action:
-  title: Ready to get started?
-  content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur.
+  title: Transform Your Bathroom Today
+  content: Get Your Free, No-Obligation Quote and Start Planning Your Dream Space Now!
   image: "/images/happy2.jpg"
   button:
     enable: true
