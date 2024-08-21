@@ -1,9 +1,9 @@
 {
-  "name": " bigspring-light-astro",
-  "version": "2.0.0",
+  "name": "omnireno",
+  "version": "1.0.0",
   "description": "astro personal blog theme",
-  "author": "themefisher",
-  "license": "MIT",
+  "author": "bruno sette",
+  "license": "UNLICENSED",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
