@@ -7,9 +7,14 @@ import { defineConfig, squooshImageService } from "astro/config";
 import remarkCollapse from "remark-collapse";
 import remarkToc from "remark-toc";
 import config from "./src/config/config.json";
+import vercel from "@astrojs/vercel/serverless";
 
 // https://astro.build/config
 export default defineConfig({
+  // output: "server",
+  // adapter: vercel({
+  //   webAnalytics: { enabled: true },
+  // }),
   site: config.site.base_url ? config.site.base_url : "http://www.omnireno.ca",
   base: config.site.base_path ? config.site.base_path : "/",
   trailingSlash: config.site.trailing_slash ? "always" : "never",
