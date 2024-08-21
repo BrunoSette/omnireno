@@ -5,7 +5,7 @@ Description: "Transform Your Space with Expert Painting Services"
 banner:
   title: Transform Your Space with Expert Painting Services
   content: At OmniReno we specialize in bringing color and vibrancy to your home or business. Our team of professional painters delivers **exceptional craftsmanship**, whether you're looking for a fresh coat of paint to refresh your space or a complete transformation with a new color scheme. With a focus on quality, precision, and customer satisfaction, we take pride in enhancing the beauty and value of your property. Let us make your vision a reality!
-  image: /images/painter.jpg
+  image: /images/painter.webp
   button:
     label: "Get a free quote now"
     link: "/contact"
@@ -26,7 +26,7 @@ services:
   - title: "Testimonials"
     content: "Our clients' testimonials speak to our commitment to excellence. They highlight our attention to detail, professionalism, and the stunning transformations we achieve. We're proud of the positive feedback, reflecting our dedication to delivering exceptional service and beautiful results."
     images:
-      - "/images/painting.jpg"
+      - "/images/painting.webp"
     button:
       enable: false
       label: Check it out
@@ -35,9 +35,9 @@ services:
   - title: "It’s a team of experienced and skilled people with distributions"
     content: "Our team is a skilled group of professionals with years of experience in painting. We pride ourselves on attention to detail, quality work, and a friendly, client-focused approach. Whether it's a small room or a large commercial space, we deliver beautiful results with passion and expertise."
     images:
-      - "/images/worker.jpg"
-      - "/images/worker2.jpg"
-      - "/images/worker3.jpg"
+      - "/images/worker.webp"
+      - "/images/worker2.webp"
+      - "/images/worker3.webp"
     button:
       enable: false
       label: Check it out
@@ -46,9 +46,9 @@ services:
   - title: "A company standing different from others"
     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
     images:
-      - "/images/worker4.jpg"
-      - "/images/painter2.jpg"
-      - "/images/worker3.jpg"
+      - "/images/worker4.webp"
+      - "/images/painter2.webp"
+      - "/images/worker3.webp"
     button:
       enable: true
       label: Check it out
@@ -57,14 +57,14 @@ services:
 # workflow
 workflow:
   title: "Experience the best workflow with us"
-  image: "/images/happy.jpg"
+  image: "/images/happy.webp"
   description: ""
 
 # call_to_action
 call_to_action:
   title: Ready to transform your space?
   content: Contact us today for a free, no-obligation quote and let us bring your vision to life!
-  image: "/images/happy2.jpg"
+  image: "/images/happy2.webp"
   button:
     enable: true
     label: "Contact Us"

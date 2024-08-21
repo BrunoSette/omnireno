@@ -27,7 +27,7 @@ services:
   - title: "Testimonials"
     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
     images:
-      - "/images/painting.jpg"
+      - "/images/painting.webp"
     button:
       enable: true
       label: Check it out
@@ -36,9 +36,9 @@ services:
   - title: "It’s a team of experienced and skilled people with distributions"
     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
     images:
-      - "/images/worker.jpg"
-      - "/images/worker2.jpg"
-      - "/images/worker3.jpg"
+      - "/images/worker.webp"
+      - "/images/worker2.webp"
+      - "/images/worker3.webp"
     button:
       enable: true
       label: Check it out
@@ -47,9 +47,9 @@ services:
   - title: "A company standing different from others"
     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
     images:
-      - "/images/worker4.jpg"
-      - "/images/painter2.jpg"
-      - "/images/worker3.jpg"
+      - "/images/worker4.webp"
+      - "/images/painter2.webp"
+      - "/images/worker3.webp"
     button:
       enable: true
       label: Check it out
@@ -58,14 +58,14 @@ services:
 # workflow
 workflow:
   title: "Experience the best workflow with us"
-  image: "/images/happy.jpg"
+  image: "/images/happy.webp"
   description: ""
 
 # call_to_action
 call_to_action:
   title: Ready to get started?
   content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur.
-  image: "/images/happy2.jpg"
+  image: "/images/happy2.webp"
   button:
     enable: true
     label: "Contact Us"
