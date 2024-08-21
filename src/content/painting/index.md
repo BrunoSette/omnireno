@@ -23,20 +23,18 @@ services:
       label: Check it out
       link: /contact
 
-  - title: "Testimonials"
-    content: "Our clients' testimonials speak to our commitment to excellence. They highlight our attention to detail, professionalism, and the stunning transformations we achieve. We're proud of the positive feedback, reflecting our dedication to delivering exceptional service and beautiful results."
+  - title: "Our Process"
+    content: "At OmniReno, we make bathroom renovation seamless. It begins with a personalized consultation to understand your vision, followed by expert design and detailed planning. Our skilled team then brings your ideas to life with precision and care, ensuring minimal disruption. We finish with a thorough inspection, leaving you with a beautifully transformed bathroom, ready for you to enjoy."
     images:
-      - "/images/painting.webp"
+      - "/images/blueprint.webp"
     button:
       enable: false
       label: Check it out
       link: /contact
 
   - title: "It’s a team of experienced and skilled people with distributions"
-    content: "Our team is a skilled group of professionals with years of experience in painting. We pride ourselves on attention to detail, quality work, and a friendly, client-focused approach. Whether it's a small room or a large commercial space, we deliver beautiful results with passion and expertise."
+    content: "Our team at OmniReno is composed of experienced and skilled professionals, each bringing their unique expertise to every project. With specialists in design, construction, and project management, we ensure that every aspect of your renovation is handled with precision and care. Our distributed approach allows us to streamline the process, combining the strengths of our team members to deliver exceptional results that meet your exact needs and expectations."
     images:
-      - "/images/worker.webp"
-      - "/images/worker2.webp"
       - "/images/worker3.webp"
     button:
       enable: false
@@ -44,26 +42,25 @@ services:
       link: /contact
 
   - title: "A company standing different from others"
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
+    content: "At OmniReno, we stand apart from the competition by placing trust and customer satisfaction at the heart of everything we do. Our commitment to integrity means you can count on us to deliver honest, transparent service from start to finish. We prioritize your needs, ensuring that every project reflects your vision and exceeds your expectations. With OmniReno, you’re not just another client—you’re a valued partner in creating a space you’ll love for years to come."
     images:
       - "/images/worker4.webp"
       - "/images/painter2.webp"
-      - "/images/worker3.webp"
     button:
-      enable: true
+      enable: false
       label: Check it out
       link: /contact
 
 # workflow
-workflow:
-  title: "Experience the best workflow with us"
-  image: "/images/happy.webp"
-  description: ""
+# workflow:
+#   title: "Experience the best workflow with us"
+#   image: "/images/happy.webp"
+#   description: ""
 
 # call_to_action
 call_to_action:
-  title: Ready to transform your space?
-  content: Contact us today for a free, no-obligation quote and let us bring your vision to life!
+  title: Transform Your Bathroom Today
+  content: Get Your Free, No-Obligation Quote and Start Planning Your Dream Space Now!
   image: "/images/happy2.webp"
   button:
     enable: true

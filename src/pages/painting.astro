@@ -3,9 +3,9 @@ import { Image } from "astro:assets";
 import Base from "@/layouts/Base.astro";
 import Cta from "@/layouts/components/Cta.astro";
 import { markdownify } from "@/lib/utils/textConverter";
-import { getEntryBySlug } from "astro:content";
+import { getEntry } from "astro:content";
 
-const homepage = await getEntryBySlug("painting", "index");
+const homepage = await getEntry("painting", "index");
 const { banner, services, workflow, call_to_action } = homepage.data;
 ---
 
@@ -142,7 +142,7 @@ const { banner, services, workflow, call_to_action } = homepage.data;
   <!-- ./End service -->
 
   <!-- Workflow -->
-  <section class="section pb-0">
+  <!-- <section class="section pb-0">
     <div class="mb-8 text-center">
       <h2
         class="mx-auto max-w-[400px] font-bold leading-[44px]"
@@ -157,7 +157,7 @@ const { banner, services, workflow, call_to_action } = homepage.data;
       width={1920}
       height={414}
     />
-  </section>
+  </section> -->
 
   <!-- Call to Action -->
   <Cta cta={call_to_action} />

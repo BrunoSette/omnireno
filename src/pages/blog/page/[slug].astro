@@ -7,7 +7,7 @@ import { sortByDate } from "@/lib/utils/sortFunctions";
 import { markdownify } from "@/lib/utils/textConverter";
 import Post from "@/partials/Post.astro";
 import type { TIndexData } from "@/types";
-import { getEntryBySlug } from "astro:content";
+import { getEntry } from "astro:content";
 const { blog_folder } = config.settings;
 
 export async function getStaticPaths() {
@@ -26,7 +26,7 @@ export async function getStaticPaths() {
 }
 
 const { slug } = Astro.params;
-const postIndex = (await getEntryBySlug<any, string>(
+const postIndex = (await getEntry<any, string>(
   blog_folder,
   "_index",
 )) as TIndexData;
