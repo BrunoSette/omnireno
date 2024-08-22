@@ -8,24 +8,24 @@ banner:
 feature:
   title: Services
   features:
-    - name: "Interior Painting"
+    - name: "Painting"
       icon: "/images/painting.svg"
-      content: "Residential and commercial interior painting, including walls, ceilings, trim, and doors."
-    - name: "Exterior Painting"
+      content: "Residential and commercial interior and exterior painting, including walls, ceilings, trim, and doors."
+    - name: "Full House Renovation"
       icon: "/images/painting-home.svg"
-      content: "Residential and commercial exterior painting, including walls, siding, fences, and decks."
-    - name: "Wallpaper Installation and Removal"
+      content: "Comprehensive renovation services for entire homes, covering all aspects from start to finish."
+    - name: "Side Entrance and Window Cutting"
       icon: "/images/wallpaper.svg"
-      content: "Professional wallpaper hanging and removal services."
-    - name: "Bathroom Remodeling"
+      content: "Creating side entrances and cutting openings for new windows with precision."
+    - name: "Washroom and Kitchen Make Over"
       icon: "/images/bathroom.svg"
-      content: "Complete bathroom remodels, including fixtures, tile work, and cabinetry."
-    - name: "Basement Finishing"
+      content: "Complete bathroom and kitchen remodels, including fixtures, tile work, and cabinetry."
+    - name: "Basement Renovations"
       icon: "/images/basement.svg"
-      content: "Turning unfinished basements into livable spaces."
-    - name: "Drywall Installation and Repair"
+      content: "Transforming unfinished basements into comfortable, livable spaces."
+    - name: "Flooring and Tiling"
       icon: "/images/drywall.svg"
-      content: "Hanging, finishing, and repairing drywall."
+      content: "Installation of various flooring options and precise tile work for all surfaces."
 
 # services
 services:
