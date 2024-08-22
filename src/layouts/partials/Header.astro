@@ -20,8 +20,8 @@ export interface NavigationLink {
 const { main }: { main: NavigationLink[] } = menu;
 ---
 
-<header class="header">
-  <nav class="navbar container">
+<header class="header fixed top-0 left-0 w-full z-50 bg-white shadow-md">
+  <nav class="navbar container mx-auto flex items-center justify-between p-4">
     <!-- logo -->
     <div class="order-0">
       <Logo />
@@ -124,3 +124,9 @@ const { main }: { main: NavigationLink[] } = menu;
     }
   </nav>
 </header>
+
+<style>
+  body {
+    padding-top: 4rem;
+  }
+</style>
