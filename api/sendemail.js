@@ -9,12 +9,12 @@ export const POST = async ({ request }) => {
   };
 
   try {
-    if (!import.meta.env.SENDGRID_API_KEY) {
+    if (!process.env.SENDGRID_API_KEY) {
       console.error("SENDGRID_API_KEY is not set");
       throw new Error("SENDGRID_API_KEY is not set");
     }
 
-    sgMail.setApiKey(import.meta.env.SENDGRID_API_KEY);
+    sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
     const data = await request.json();
     console.log("Received data:", data);
