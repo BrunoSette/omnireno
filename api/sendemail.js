@@ -36,21 +36,27 @@ export const POST = async ({ request }) => {
     };
 
     console.log("Attempting to send email with data:", msg);
-    const [response] = await sgMail.send(msg);
-    console.log("SendGrid API Response:", response);
 
-    if (response.statusCode >= 200 && response.statusCode < 300) {
-      console.log("Email sent successfully");
-      return new Response(
-        JSON.stringify({ message: "Email sent successfully" }),
-        {
-          status: 200,
-          headers,
-        },
-      );
-    } else {
-      console.error("SendGrid API Error:", response.body);
-      throw new Error(`SendGrid API Error: ${response.statusCode}`);
+    try {
+      const response = await sgMail.send(msg);
+      console.log("SendGrid API Response:", response);
+
+      if (response[0].statusCode >= 200 && response[0].statusCode < 300) {
+        console.log("Email sent successfully");
+        return new Response(
+          JSON.stringify({ message: "Email sent successfully" }),
+          {
+            status: 200,
+            headers,
+          },
+        );
+      } else {
+        console.error("SendGrid API Error:", response[0].body);
+        throw new Error(`SendGrid API Error: ${response[0].statusCode}`);
+      }
+    } catch (sendError) {
+      console.error("Error sending email:", sendError);
+      throw new Error("Failed to send email via SendGrid");
     }
   } catch (error) {
     console.error("Error in sendemail API route:", error);
