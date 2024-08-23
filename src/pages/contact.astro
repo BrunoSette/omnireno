@@ -1,11 +1,11 @@
 ---
-// import config from "@/config/config.json";
+import config from "@/config/config.json";
 import Base from "@/layouts/Base.astro";
 import { markdownify } from "@/lib/utils/textConverter";
 import { getEntry } from "astro:content";
 
 const entry = await getEntry("contact", "index");
-// const { contact_form_action } = config.params;
+const { contact_form_action } = config.params;
 const { title, description, info } = entry?.data;
 ---
 
@@ -15,10 +15,11 @@ const { title, description, info } = entry?.data;
       <h1 class="text-center font-normal" set:html={markdownify(title)} />
       <div class="section row pb-0">
         <div class="col-12 md:col-6 lg:col-7">
-<!-- <form class="contact-form" method="POST" action={contact_form_action}>
+<form class="contact-form" method="POST" action={contact_form_action}>
   <div class="mb-3">
     <input
       class="form-input w-full rounded"
+      id="name"
       name="name"
       type="text"
       placeholder="Name"
@@ -28,6 +29,7 @@ const { title, description, info } = entry?.data;
   <div class="mb-3">
     <input
       class="form-input w-full rounded"
+      id="email"
       name="email"
       type="email"
       placeholder="Your email"
@@ -37,12 +39,15 @@ const { title, description, info } = entry?.data;
   <div class="mb-3">
     <input
       class="form-input w-full rounded"
-      name="subject"
+      id="phone"
+      name="phone"
       type="tel"
       placeholder="Phone Number"
     />
   </div>
-<input type="hidden" name="_cc" value="ricardo@omnireno.ca">
+<input type="hidden" name="_cc" value="omnireno@robot.zapier.com">
+<input type="hidden" name="_captcha" value="false">
+
   <div class="mb-3">
     <label class="block mb-2" for="services">Services:</label>
     <select id="services" name="services" class="form-select w-full rounded">
@@ -53,27 +58,27 @@ const { title, description, info } = entry?.data;
       <option value="Other">Other</option>
     </select>
   </div>
-  <div class="mb-3">
+
+
+<div class="mb-3">
     <label class="block mb-2" for="budget">Budget:</label>
-    <select id="budget" name="budget" class="form-select w-full rounded">
-      <option value="Under $10k">Under $10k</option>
-      <option value="$10k - $30k">$10k - $30k</option>
-      <option value="$30k - $50k">$30k - $50k</option>
-      <option value="$50k - $100k">$50k - $100k</option>
-      <option value="$100k - $200k">$100k - $200k</option>
-      <option value="Over $200k">Over $200k</option>
-    </select>
-  </div>
+    <div class="relative">
+        <span class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">C$</span>
+        <input id="budget" name="budget" type="text" class="form-input w-full pl-10 rounded" placeholder="" >
+    </div>
+</div>
   <div class="mb-3">
     <textarea
       class="form-textarea w-full rounded-md"
       rows="7"
+      name="notes"
+      id="notes"
       placeholder="Please provide any details or questions you have about your services, and we'll respond promptly."></textarea>
   </div>
 
   <button type="submit" class="btn btn-primary">Send Now</button>
-</form> -->
-<div class="pipedriveWebForms" data-pd-webforms="https://webforms.pipedrive.com/f/ckvTIYGskx8qOSYEby5s5WBBwFT7wZ1uWQsO2BBmi9HfxMGHoshqQO5nVEnDvCkxEv"><script is:inline src="https://webforms.pipedrive.com/f/loader"></script></div>
+</form>
+<!-- <div class="pipedriveWebForms" data-pd-webforms="https://webforms.pipedrive.com/f/ckvTIYGskx8qOSYEby5s5WBBwFT7wZ1uWQsO2BBmi9HfxMGHoshqQO5nVEnDvCkxEv"><script is:inline src="https://webforms.pipedrive.com/f/loader"></script> -->
         </div>
         <div class="content col-12 md:col-6 lg:col-5">
           <h4 set:html={markdownify(info?.title)} />
