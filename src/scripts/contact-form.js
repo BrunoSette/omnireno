@@ -39,11 +39,12 @@ async function handleSubmit(event) {
       alert("Email sent successfully");
       form.reset();
     } else {
-      let errorMessage;
+      let errorMessage = "Failed to send email";
       try {
         const errorData = await response.json();
-        errorMessage = errorData.error;
+        errorMessage = errorData.error || errorMessage;
       } catch (e) {
+        console.error("Error parsing JSON:", e);
         errorMessage = await response.text();
       }
       console.error("Error data:", errorMessage);
