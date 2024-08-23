@@ -1,10 +1,6 @@
-console.log("Contact form script loaded");
-
 document.addEventListener("DOMContentLoaded", () => {
-  console.log("DOM fully loaded");
   const form = document.getElementById("contact-form");
   if (form) {
-    console.log("Form found");
     form.addEventListener("submit", handleSubmit);
   } else {
     console.error("Form not found");
@@ -28,7 +24,6 @@ async function handleSubmit(event) {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(data),
-      credentials: "include",
     });
 
     console.log("Response received:", response);
