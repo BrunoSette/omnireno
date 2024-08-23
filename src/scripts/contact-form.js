@@ -29,10 +29,15 @@ async function handleSubmit(event) {
     console.log("Response received:", response);
 
     if (response.ok) {
-      const result = await response.json();
-      console.log("Success:", result);
-      alert("Email sent successfully");
-      form.reset();
+      try {
+        const result = await response.json();
+        console.log("Success:", result);
+        alert("Email sent successfully");
+        form.reset();
+      } catch (jsonError) {
+        console.error("Error parsing JSON:", jsonError);
+        alert("Email sent, but could not parse response.");
+      }
     } else {
       let errorMessage = "Failed to send email";
       try {
