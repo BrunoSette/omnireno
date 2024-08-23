@@ -1,34 +1,12 @@
-const sgMail = require("@sendgrid/mail");
-sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+import { setApiKey, send } from "@sendgrid/mail";
 
-module.exports = async function (event) {
+setApiKey(process.env.SENDGRID_API_KEY);
+
+export async function post({ request }) {
   try {
-    // Log the incoming event body for debugging
-    console.log("Event Body:", event.body);
+    const { name, email, phone, services, budget, notes } =
+      await request.json();
 
-    // Check if the event body is present and in JSON format
-    if (!event.body) {
-      return {
-        statusCode: 400,
-        body: JSON.stringify({ error: "No data provided" }),
-      };
-    }
-
-    // Parse the JSON body from the request
-    const data = JSON.parse(event.body);
-
-    // Destructure the data to extract the required fields
-    const { name, email, phone, services, budget, notes } = data;
-
-    // Ensure all required fields are present
-    if (!name || !email) {
-      return {
-        statusCode: 400,
-        body: JSON.stringify({ error: "Missing required fields" }),
-      };
-    }
-
-    // Create the email message
     const msg = {
       to: "brunosette@gmail.com",
       from: "marketing@omnireno.ca",
@@ -43,22 +21,16 @@ module.exports = async function (event) {
       `,
     };
 
-    // Send the email
-    await sgMail.send(msg);
-    console.log("Email sent");
+    await send(msg);
 
-    // Return a success response
-    return {
-      statusCode: 200,
-      body: JSON.stringify({ message: "Email sent successfully" }),
-    };
+    return new Response(
+      JSON.stringify({ message: "Email sent successfully" }),
+      { status: 200 },
+    );
   } catch (error) {
-    console.error("Error:", error);
-
-    // Return an error response
-    return {
-      statusCode: 500,
-      body: JSON.stringify({ error: error.message }),
-    };
+    console.error("Error sending email:", error);
+    return new Response(JSON.stringify({ error: "Failed to send email" }), {
+      status: 500,
+    });
   }
-};
+}
