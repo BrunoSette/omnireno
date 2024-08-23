@@ -1,3 +1,16 @@
+console.log("Contact form script loaded");
+
+document.addEventListener("DOMContentLoaded", () => {
+  console.log("DOM fully loaded");
+  const form = document.getElementById("contact-form");
+  if (form) {
+    console.log("Form found");
+    form.addEventListener("submit", handleSubmit);
+  } else {
+    console.error("Form not found");
+  }
+});
+
 async function handleSubmit(event) {
   event.preventDefault();
   console.log("Form submission started");
@@ -19,26 +32,22 @@ async function handleSubmit(event) {
     });
 
     console.log("Response received:", response);
-    console.log("Response status:", response.status);
-    console.log("Response headers:", response.headers);
-
-    const responseText = await response.text();
-    console.log("Response text:", responseText);
-
-    let result;
-    try {
-      result = JSON.parse(responseText);
-    } catch (e) {
-      console.error("Failed to parse response as JSON:", e);
-    }
 
     if (response.ok) {
+      const result = await response.json();
       console.log("Success:", result);
       alert("Email sent successfully");
       form.reset();
     } else {
-      console.error("Error data:", result);
-      alert(`Failed to send email: ${result?.error || responseText}`);
+      let errorMessage;
+      try {
+        const errorData = await response.json();
+        errorMessage = errorData.error;
+      } catch (e) {
+        errorMessage = await response.text();
+      }
+      console.error("Error data:", errorMessage);
+      alert(`Failed to send email: ${errorMessage}`);
     }
   } catch (error) {
     console.error("Catch block error:", error);
