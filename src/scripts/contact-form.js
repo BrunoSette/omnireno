@@ -27,28 +27,28 @@ async function handleSubmit(event) {
     });
 
     console.log("Response received:", response);
+    console.log("Response status:", response.status);
+
+    const responseText = await response.text();
+    console.log("Response text:", responseText);
+
+    let result;
+    try {
+      result = JSON.parse(responseText);
+    } catch (e) {
+      console.error("Failed to parse response as JSON:", e);
+      result = { error: "Invalid response from server" };
+    }
 
     if (response.ok) {
-      try {
-        const result = await response.json();
-        console.log("Success:", result);
-        alert("Email sent successfully");
-        form.reset();
-      } catch (jsonError) {
-        console.error("Error parsing JSON:", jsonError);
-        alert("Email sent, but could not parse response.");
-      }
+      console.log("Success:", result);
+      alert(result.message || "Email sent successfully");
+      form.reset();
     } else {
-      let errorMessage = "Failed to send email";
-      try {
-        const errorData = await response.json();
-        errorMessage = errorData.error || errorMessage;
-      } catch (e) {
-        console.error("Error parsing JSON:", e);
-        errorMessage = await response.text();
-      }
-      console.error("Error data:", errorMessage);
-      alert(`Failed to send email: ${errorMessage}`);
+      console.error("Error data:", result);
+      alert(
+        `Failed to send email: ${result.error || "Unknown error occurred"}`,
+      );
     }
   } catch (error) {
     console.error("Catch block error:", error);
