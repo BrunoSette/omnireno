@@ -8,8 +8,14 @@ const { title, description, info } = entry?.data;
 ---
 
 <script is:inline>
-  function getUTMParameters() {
-    const urlParams = new URLSearchParams(window.location.search);
+  function getCookie(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return parts.pop().split(';').shift();
+  }
+
+  function getUTMParametersFromURL(url) {
+    const urlParams = new URLSearchParams(new URL(url).search);
     const utmParams = {};
     ['utm_source', 'utm_medium', 'utm_campaign'].forEach(param => {
       if (urlParams.has(param)) {
@@ -22,16 +28,20 @@ const { title, description, info } = entry?.data;
   document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('contact-form');
     if (form) {
-      const utmParams = getUTMParameters();
-      ['utm_source', 'utm_medium', 'utm_campaign'].forEach(param => {
-        const input = document.getElementById(param);
-        if (input) {
-          input.value = utmParams[param] || '';
-        }
-      });
+      const campaignURL = getCookie('__gtm_campaign_url');
+      let utmParams = {};
+      if (campaignURL) {
+        utmParams = getUTMParametersFromURL(campaignURL);
+        ['utm_source', 'utm_medium', 'utm_campaign'].forEach(param => {
+          const input = document.getElementById(param);
+          if (input) {
+            input.value = utmParams[param] || '';
+          }
+        });
+      }
 
       form.addEventListener('submit', (event) => {
-        event.preventDefault();
+        // Do not prevent the default form submission
         console.log("Form submitted with UTM parameters:", utmParams);
         // You can add more logic here if needed
       });
@@ -47,7 +57,7 @@ const { title, description, info } = entry?.data;
       <h1 class="text-center font-normal" set:html={markdownify(title)} />
       <div class="section row pb-0">
         <div class="col-12 md:col-6 lg:col-7">
-          <form id="contact-form" class="contact-form">
+          <form id="contact-form" class="contact-form" method="POST" action="/send-email">
             <div class="mb-3">
               <input class="form-input w-full rounded" id="name" name="name" type="text" placeholder="Name" required />
             </div>
