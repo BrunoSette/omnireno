@@ -43,15 +43,15 @@ module.exports = async (req, res) => {
     console.log("Received data:", data);
 
     const {
-      utm_source,
-      utm_medium,
-      utm_campaign,
       name,
       email,
       phone,
       services,
       budget,
       notes,
+      utm_source,
+      utm_medium,
+      utm_campaign,
     } = data;
 
     const msg = {
@@ -60,15 +60,15 @@ module.exports = async (req, res) => {
       cc: "omnireno@robot.zapier.com",
       subject: "New Contact Form Submission",
       text: `
-        UTM Source: ${utm_source}
-        UTM Medium: ${utm_medium}
-        UTM Campaign: ${utm_campaign}
         Name: ${name}
         Email: ${email}
         Phone: ${phone}
         Services: ${services}
         Budget: ${budget}
         Notes: ${notes}
+        UTM Source: ${utm_source}
+        UTM Medium: ${utm_medium}
+        UTM Campaign: ${utm_campaign}
 
       `,
     };
