@@ -41,9 +41,8 @@ const { title, description, info } = entry?.data;
       }
 
       form.addEventListener('submit', (event) => {
-        // Do not prevent the default form submission
+        // Ensure the form is submitted
         console.log("Form submitted with UTM parameters:", utmParams);
-        // You can add more logic here if needed
       });
     } else {
       console.error("Form not found in inline script");
