@@ -47,6 +47,7 @@ module.exports = async (req, res) => {
     const msg = {
       to: "brunosette@gmail.com",
       from: "marketing@omnireno.ca",
+      cc: "omnireno@robot.zapier.com",
       subject: "New Contact Form Submission",
       text: `
         Name: ${name}
