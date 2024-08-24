@@ -8,14 +8,31 @@ const { title, description, info } = entry?.data;
 ---
 
 <script is:inline>
-  console.log("This is an inline script test");
+  function getUTMParameters() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const utmParams = {};
+    ['utm_source', 'utm_medium', 'utm_campaign'].forEach(param => {
+      if (urlParams.has(param)) {
+        utmParams[param] = urlParams.get(param);
+      }
+    });
+    return utmParams;
+  }
+
   document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('contact-form');
     if (form) {
-      console.log("Form found in inline script");
+      const utmParams = getUTMParameters();
+      Object.keys(utmParams).forEach(key => {
+        const input = document.getElementById(key);
+        if (input) {
+          input.value = utmParams[key];
+        }
+      });
+
       form.addEventListener('submit', (event) => {
         event.preventDefault();
-        console.log("Form submitted");
+        console.log("Form submitted with UTM parameters:", utmParams);
         // You can add more logic here if needed
       });
     } else {
@@ -60,6 +77,9 @@ const { title, description, info } = entry?.data;
             <div class="mb-3">
               <textarea class="form-textarea w-full rounded-md" rows="7" name="notes" id="notes" placeholder="Please provide any details or questions you have about your services, and we'll respond promptly."></textarea>
             </div>
+            <input type="hidden" id="utm_source" name="utm_source" />
+            <input type="hidden" id="utm_medium" name="utm_medium" />
+            <input type="hidden" id="utm_campaign" name="utm_campaign" />
             <button type="submit" class="btn btn-primary">Send Now</button>
           </form>
         </div>
