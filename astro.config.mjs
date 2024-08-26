@@ -16,7 +16,7 @@ export default defineConfig({
   site: config.site.base_url ? config.site.base_url : "http://www.omnireno.ca",
   base: config.site.base_path ? config.site.base_path : "/",
   trailingSlash: config.site.trailing_slash ? "always" : "never",
-  output: "hybrid",
+  output: "server",
   adapter: vercel(),
   image: {
     service: sharp(),
