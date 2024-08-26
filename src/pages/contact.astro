@@ -1,10 +1,24 @@
 ---
 import Base from "@/layouts/Base.astro";
 import { markdownify } from "@/lib/utils/textConverter";
-import { getEntry } from "astro:content";
+// import { getEntry } from "astro:content";
 
-const entry = await getEntry("contact", "index");
-const { title, description, info } = entry?.data;
+// const entry = await getEntry("contact", "index");
+// const { title, description, info } = entry?.data;
+export const prerender = false;
+const { title, description, info } = {
+  title: "Get a Free Qoute",
+  description: "Entry Description",
+  info: {
+    title: "Info Title",
+    description: "Info Description",
+    contacts: [
+      "phone",
+      "mail",
+      "address"
+    ]
+  }
+};
 ---
 
 <script is:inline>
@@ -44,12 +58,11 @@ const { title, description, info } = entry?.data;
         event.preventDefault(); // Prevent default form submission
 
         const formData = new FormData(form);
-        console.log('Form Data:', Object.fromEntries(formData.entries())); // Log form data
 
         try {
           const response = await fetch(form.action, {
             method: form.method,
-            body: formData,
+            body: formData
           });
 
           if (response.ok) {

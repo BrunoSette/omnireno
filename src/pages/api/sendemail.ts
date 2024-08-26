@@ -1,46 +1,35 @@
+import { APIRoute } from 'astro';
 import sgMail from "@sendgrid/mail";
 
-export default async function handler(req, res) {
+export const prerender = false;
+
+export const POST: APIRoute = async ({params, request}): Promise<Response> => {
   console.log("Received POST request to /api/sendemail");
 
   // Enable CORS
-  res.setHeader("Access-Control-Allow-Credentials", true);
-  res.setHeader("Access-Control-Allow-Origin", "*");
-  res.setHeader(
-    "Access-Control-Allow-Methods",
-    "GET,OPTIONS,PATCH,DELETE,POST,PUT",
-  );
-  res.setHeader(
-    "Access-Control-Allow-Headers",
-    "X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version",
-  );
-
-  if (req.method === "OPTIONS") {
-    res.status(200).end();
-    return;
-  }
-
-  if (req.method !== "POST") {
-    return res.status(405).json({ error: "Method Not Allowed" });
-  }
+  // res.setHeader("Access-Control-Allow-Credentials", true);
+  // res.setHeader("Access-Control-Allow-Origin", "*");
+  // res.setHeader(
+  //   "Access-Control-Allow-Methods",
+  //   "GET,OPTIONS,PATCH,DELETE,POST,PUT",
+  // );
+  // res.setHeader(
+  //   "Access-Control-Allow-Headers",
+  //   "X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version",
+  // );
 
   try {
-    const SENDGRID_API_KEY = process.env.SENDGRID_API_KEY;
+    const SENDGRID_API_KEY = import.meta.env.SENDGRID_API_KEY;
     if (!SENDGRID_API_KEY) {
       console.error("SENDGRID_API_KEY is not set");
-      return res.status(500).json({ error: "SENDGRID_API_KEY is not set" });
+      return new Response(JSON.stringify({
+        error: "SENDGRID_API_KEY is not set"
+      }), { status: 400 });
     }
 
     sgMail.setApiKey(SENDGRID_API_KEY);
 
-    let data;
-    if (req.headers["content-type"] === "application/json") {
-      data = req.body;
-    } else {
-      data = JSON.parse(req.body);
-    }
-
-    console.log("Received data:", data);
+    let data = Object.fromEntries((await request.formData()).entries());
 
     const {
       name,
@@ -79,17 +68,20 @@ export default async function handler(req, res) {
 
     if (response.statusCode >= 200 && response.statusCode < 300) {
       console.log("Email sent successfully");
-      return res.status(200).json({ message: "Email sent successfully" });
+      return new Response(JSON.stringify({
+        message: "Email sent successfully",
+      }), { status: 200 });
     } else {
       console.error("SendGrid API Error:", response.body);
-      return res
-        .status(500)
-        .json({ error: `SendGrid API Error: ${response.statusCode}` });
+      return new Response(JSON.stringify({
+        error: `SendGrid API Error: ${response.statusCode}`,
+      }), { status: 500 });
     }
-  } catch (error) {
+  } catch (error: any) {
     console.error("Error in sendemail API route:", error);
-    return res
-      .status(500)
-      .json({ error: "Server error", details: error.message });
+    return new Response(JSON.stringify({
+      error: "Server error",
+      details: error.message
+    }), { status: 500 });
   }
 }
