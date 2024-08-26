@@ -77,7 +77,7 @@ const { title, description, info } = entry?.data;
       <h1 class="text-center font-normal" set:html={markdownify(title)} />
       <div class="section row pb-0">
         <div class="col-12 md:col-6 lg:col-7">
-          <form id="contact-form" class="contact-form" method="POST" action="https://www.omnireno.ca/send-email">
+          <form id="contact-form" class="contact-form" method="POST" action="https://www.omnireno.ca/api/sendemail">
             <div class="mb-3">
               <input class="form-input w-full rounded" id="name" name="name" type="text" placeholder="Name" required />
             </div>

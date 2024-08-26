@@ -1,6 +1,6 @@
 const sgMail = require("@sendgrid/mail");
 
-module.exports = async (req, res) => {
+export default async function handler(req, res) {
   console.log("Received POST request to /api/sendemail");
 
   // Enable CORS
@@ -93,4 +93,4 @@ module.exports = async (req, res) => {
       .status(500)
       .json({ error: "Server error", details: error.message });
   }
-};
+}
