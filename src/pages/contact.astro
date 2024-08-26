@@ -1,24 +1,11 @@
 ---
+export const prerender = false;
+
 import Base from "@/layouts/Base.astro";
 import { markdownify } from "@/lib/utils/textConverter";
-// import { getEntry } from "astro:content";
-
-// const entry = await getEntry("contact", "index");
-// const { title, description, info } = entry?.data;
-export const prerender = false;
-const { title, description, info } = {
-  title: "Get a Free Qoute",
-  description: "Entry Description",
-  info: {
-    title: "Info Title",
-    description: "Info Description",
-    contacts: [
-      "phone",
-      "mail",
-      "address"
-    ]
-  }
-};
+import { getEntry } from "astro:content";
+const entry = await getEntry("contact", "index");
+const { title, description, info } = entry?.data;
 ---
 
 <script is:inline>
@@ -45,7 +32,7 @@ const { title, description, info } = {
       const campaignURL = getCookie('__gtm_campaign_url');
       let utmParams = {};
       if (campaignURL) {
-        utmParams = getUTMParametersFromCookie(campaignURL);
+        utmParams = getUTMParametersFromCookie(decodeURIComponent(campaignURL));
         ['utm_source', 'utm_medium', 'utm_campaign'].forEach(param => {
           const input = document.getElementById(param);
           if (input) {
@@ -61,7 +48,7 @@ const { title, description, info } = {
 
         try {
           const response = await fetch(form.action, {
-            method: form.method,
+            method: "POST",
             body: formData
           });
 
