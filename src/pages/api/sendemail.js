@@ -34,10 +34,10 @@ export default async function handler(req, res) {
     sgMail.setApiKey(SENDGRID_API_KEY);
 
     let data;
-    if (typeof req.body === "string") {
-      data = JSON.parse(req.body);
-    } else {
+    if (req.headers["content-type"] === "application/json") {
       data = req.body;
+    } else {
+      data = JSON.parse(req.body);
     }
 
     console.log("Received data:", data);
@@ -69,7 +69,6 @@ export default async function handler(req, res) {
         UTM Source: ${utm_source}
         UTM Medium: ${utm_medium}
         UTM Campaign: ${utm_campaign}
-
       `,
     };
 
