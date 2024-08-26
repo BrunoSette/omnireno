@@ -7,6 +7,7 @@ import { defineConfig, squooshImageService } from "astro/config";
 import remarkCollapse from "remark-collapse";
 import remarkToc from "remark-toc";
 import config from "./src/config/config.json";
+import vercel from "@astrojs/vercel/serverless";
 import sitemap from "@astrojs/sitemap";
 import sharp from "sharp";
 
@@ -16,6 +17,7 @@ export default defineConfig({
   base: config.site.base_path ? config.site.base_path : "/",
   trailingSlash: config.site.trailing_slash ? "always" : "never",
   output: "server",
+  adapter: vercel(),
   image: {
     service: sharp(),
   },
