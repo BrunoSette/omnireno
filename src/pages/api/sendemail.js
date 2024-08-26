@@ -1,4 +1,4 @@
-const sgMail = require("@sendgrid/mail");
+import sgMail from "@sendgrid/mail";
 
 export default async function handler(req, res) {
   console.log("Received POST request to /api/sendemail");
