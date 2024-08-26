@@ -29,6 +29,11 @@ async function handleSubmit(event) {
     console.log("Response received:", response);
     console.log("Response status:", response.status);
 
+    if (response.status === 405) {
+      console.error("Method Not Allowed");
+      alert("Failed to submit the form. Please try again.");
+    }
+
     const responseText = await response.text();
     console.log("Response text:", responseText);
 
