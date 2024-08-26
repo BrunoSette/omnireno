@@ -11,6 +11,7 @@ feature:
     - name: "Painting"
       icon: "/images/painting.svg"
       content: "Residential and commercial interior and exterior painting, including walls, ceilings, trim, and doors."
+      link: /painting
     - name: "Full House Renovation"
       icon: "/images/painting-home.svg"
       content: "Comprehensive renovation services for entire homes, covering all aspects from start to finish."
@@ -20,9 +21,11 @@ feature:
     - name: "Washroom and Kitchen Make Over"
       icon: "/images/bathroom.svg"
       content: "Complete bathroom and kitchen remodels, including fixtures, tile work, and cabinetry."
+      link: /bathrooms
     - name: "Basement Renovations"
       icon: "/images/basement.svg"
       content: "Transforming unfinished basements into comfortable, livable spaces."
+      link: /basements
     - name: "Flooring and Tiling"
       icon: "/images/drywall.svg"
       content: "Installation of various flooring options and precise tile work for all surfaces."
@@ -48,24 +51,24 @@ services:
       label: Check it out
       link: /contact
 
-  - title: "It’s a team of experienced and skilled people with distributions"
-    content: "Our team at OmniReno is composed of experienced and skilled professionals, each bringing their unique expertise to every project. With specialists in design, construction, and project management, we ensure that every aspect of your renovation is handled with precision and care. Our distributed approach allows us to streamline the process, combining the strengths of our team members to deliver exceptional results that meet your exact needs and expectations."
-    images:
-      - "/images/worker3.webp"
-    button:
-      enable: true
-      label: Check it out
-      link: /contact
+  # - title: "It’s a team of experienced and skilled people with distributions"
+  #   content: "Our team at OmniReno is composed of experienced and skilled professionals, each bringing their unique expertise to every project. With specialists in design, construction, and project management, we ensure that every aspect of your renovation is handled with precision and care. Our distributed approach allows us to streamline the process, combining the strengths of our team members to deliver exceptional results that meet your exact needs and expectations."
+  #   images:
+  #     - "/images/worker3.webp"
+  #   button:
+  #     enable: true
+  #     label: Check it out
+  #     link: /contact
 
-  - title: "A company standing different from others"
-    content: "At OmniReno, we stand apart from the competition by placing trust and customer satisfaction at the heart of everything we do. Our commitment to integrity means you can count on us to deliver honest, transparent service from start to finish. We prioritize your needs, ensuring that every project reflects your vision and exceeds your expectations. With OmniReno, you’re not just another client—you’re a valued partner in creating a space you’ll love for years to come."
-    images:
-      - "/images/worker4.webp"
-      - "/images/painter2.webp"
-    button:
-      enable: false
-      label: Check it out
-      link: /contact
+  # - title: "A company standing different from others"
+  #   content: "At OmniReno, we stand apart from the competition by placing trust and customer satisfaction at the heart of everything we do. Our commitment to integrity means you can count on us to deliver honest, transparent service from start to finish. We prioritize your needs, ensuring that every project reflects your vision and exceeds your expectations. With OmniReno, you’re not just another client—you’re a valued partner in creating a space you’ll love for years to come."
+  #   images:
+  #     - "/images/worker4.webp"
+  #     - "/images/painter2.webp"
+  #   button:
+  #     enable: false
+  #     label: Check it out
+  #     link: /contact
 
 # workflow
 # workflow:

@@ -32,24 +32,24 @@ services:
       label: Check it out
       link: /contact
 
-  - title: "It’s a team of experienced and skilled people with distributions"
-    content: "Our team at OmniReno is composed of experienced and skilled professionals, each bringing their unique expertise to every project. With specialists in design, construction, and project management, we ensure that every aspect of your renovation is handled with precision and care. Our distributed approach allows us to streamline the process, combining the strengths of our team members to deliver exceptional results that meet your exact needs and expectations."
-    images:
-      - "/images/worker3.webp"
-    button:
-      enable: false
-      label: Check it out
-      link: /contact
+  # - title: "It’s a team of experienced and skilled people with distributions"
+  #   content: "Our team at OmniReno is composed of experienced and skilled professionals, each bringing their unique expertise to every project. With specialists in design, construction, and project management, we ensure that every aspect of your renovation is handled with precision and care. Our distributed approach allows us to streamline the process, combining the strengths of our team members to deliver exceptional results that meet your exact needs and expectations."
+  #   images:
+  #     - "/images/worker3.webp"
+  #   button:
+  #     enable: false
+  #     label: Check it out
+  #     link: /contact
 
-  - title: "A company standing different from others"
-    content: "At OmniReno, we stand apart from the competition by placing trust and customer satisfaction at the heart of everything we do. Our commitment to integrity means you can count on us to deliver honest, transparent service from start to finish. We prioritize your needs, ensuring that every project reflects your vision and exceeds your expectations. With OmniReno, you’re not just another client—you’re a valued partner in creating a space you’ll love for years to come."
-    images:
-      - "/images/worker4.webp"
-      - "/images/painter2.webp"
-    button:
-      enable: false
-      label: Check it out
-      link: /contact
+  # - title: "A company standing different from others"
+  #   content: "At OmniReno, we stand apart from the competition by placing trust and customer satisfaction at the heart of everything we do. Our commitment to integrity means you can count on us to deliver honest, transparent service from start to finish. We prioritize your needs, ensuring that every project reflects your vision and exceeds your expectations. With OmniReno, you’re not just another client—you’re a valued partner in creating a space you’ll love for years to come."
+  #   images:
+  #     - "/images/worker4.webp"
+  #     - "/images/painter2.webp"
+  #   button:
+  #     enable: false
+  #     label: Check it out
+  #     link: /contact
 
 # workflow
 # workflow:

@@ -55,38 +55,35 @@ const { banner, feature, services, workflow, call_to_action } = homepage.data;
       </div>
       <div class="mt-8 grid gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-3">
         {
-          feature!.features.map((item: any, i: number) => (
-            <div class="feature-card rounded-xl bg-white p-5 pb-8 text-center">
-              {item.icon && (
-                // <Image
-                //   class="mx-auto"
-                //   src={item.icon}
-                //   width={30}
-                //   height={30}
-                //   alt=""
-                // />
-                <img
-                  class="mx-auto"
-                  loading="lazy"
-                  alt={item.icon}
-                  src={item.icon}
-                  width={30}
-                  height={30}
-                />
-              )}
-              <div class="mt-4">
-                <p class="h5" set:html={markdownify(item!.name)} />
-                <p class="mt-3">{item.content}</p>
-              </div>
-            </div>
-          ))
+
+       feature!.features.map((item: any, i: number) => (
+           <a href={item.link}>
+  <div class="feature-card rounded-xl bg-white p-5 pb-8 text-center">
+    {item.icon && (
+      <img
+        class="mx-auto"
+        loading="lazy"
+        alt={item.icon}
+        src={item.icon}
+        width={30}
+        height={30}
+      />
+    )}
+    <div class="mt-4">
+      <p class="h5" set:html={markdownify(item!.name)} />
+      <p class="mt-3">{item.content}</p>
+    </div>
+  </div>
+</a>
+        )
+          )
         }
       </div>
     </div>
   </section>
 
   <!-- Services -->
-  {
+  <!-- {
     services!.map((service: any, index: number) => {
       const isOdd = index % 2 > 0;
       return (
@@ -152,7 +149,7 @@ const { banner, feature, services, workflow, call_to_action } = homepage.data;
         </section>
       );
     })
-  }
+  } -->
 
   <script>
     import { Swiper } from "swiper";

@@ -25,7 +25,7 @@ services:
       link: /contact
 
   - title: "Our Seamless Renovation Process"
-    content: "At OmniReno, we believe that transforming your basement should be an exciting, stress-free experience. Our process begins with a personalized consultation where we listen to your ideas and assess your space. From there, our expert designers create a plan that reflects your vision, followed by detailed planning and scheduling. Our skilled team then brings your dream basement to life with precision, ensuring minimal disruption to your daily life. Finally, we conduct a thorough walkthrough to ensure every detail meets our high standards—and yours."
+    content: "At OmniReno, we specialize in transforming basements from underutilized storage areas into vibrant, functional spaces that enhance your lifestyle. Whether you envision a new rental unit or a dream basement for your family and friends, we’re here to bring your ideas to life. Let us help you create a basement that not only adds valuable square footage but also elevates the comfort and value of your home."
     images:
       - "/images/painting.webp"
     button:
@@ -33,27 +33,27 @@ services:
       label: Check it out
       link: /contact
 
-  - title: "A Team Dedicated to Excellence"
-    content: "OmniReno’s team is composed of dedicated professionals who bring their expertise to every stage of your basement renovation. From creative designers who understand your vision to skilled craftsmen who bring it to life, our team works together seamlessly to deliver results that are both stunning and durable. Our collaborative approach ensures that every aspect of your renovation is handled with care, precision, and a commitment to exceeding your expectations."
-    images:
-      - "/images/worker.webp"
-      - "/images/worker2.webp"
-      - "/images/worker3.webp"
-    button:
-      enable: true
-      label: Check it out
-      link: /contact
+  # - title: "A Team Dedicated to Excellence"
+  #   content: "OmniReno’s team is composed of dedicated professionals who bring their expertise to every stage of your basement renovation. From creative designers who understand your vision to skilled craftsmen who bring it to life, our team works together seamlessly to deliver results that are both stunning and durable. Our collaborative approach ensures that every aspect of your renovation is handled with care, precision, and a commitment to exceeding your expectations."
+  #   images:
+  #     - "/images/worker.webp"
+  #     - "/images/worker2.webp"
+  #     - "/images/worker3.webp"
+  #   button:
+  #     enable: true
+  #     label: Check it out
+  #     link: /contact
 
-  - title: "What Sets OmniReno Apart"
-    content: "At OmniReno, we go beyond the ordinary to deliver basement renovations that truly stand out. Our focus on integrity and customer satisfaction means we take the time to understand your needs and work tirelessly to bring your vision to life. We pride ourselves on our transparent communication, meticulous attention to detail, and unwavering commitment to quality. With OmniReno, your project is more than just another renovation—it's a partnership aimed at creating a space that enriches your home and your life."
-    images:
-      - "/images/worker4.webp"
-      - "/images/painter2.webp"
-      - "/images/worker3.webp"
-    button:
-      enable: true
-      label: Check it out
-      link: /contact
+  # - title: "What Sets OmniReno Apart"
+  #   content: "At OmniReno, we go beyond the ordinary to deliver basement renovations that truly stand out. Our focus on integrity and customer satisfaction means we take the time to understand your needs and work tirelessly to bring your vision to life. We pride ourselves on our transparent communication, meticulous attention to detail, and unwavering commitment to quality. With OmniReno, your project is more than just another renovation—it's a partnership aimed at creating a space that enriches your home and your life."
+  #   images:
+  #     - "/images/worker4.webp"
+  #     - "/images/painter2.webp"
+  #     - "/images/worker3.webp"
+  #   button:
+  #     enable: true
+  #     label: Check it out
+  #     link: /contact
 
 # workflow
 # workflow:
