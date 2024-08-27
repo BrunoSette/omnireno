@@ -7,5 +7,5 @@ info:
   contacts:
     - "phone: +1 437 980 2714"
     - "Mail: [quotes@omnireno.ca](mailto:quotes@omnireno.ca)"
-    - "Address: 24 The Links Rd, Toronto, ON M2P 1T6"
+    # - "Address: 24 The Links Rd, Toronto, ON M2P 1T6"
 ---
