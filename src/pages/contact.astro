@@ -1,5 +1,5 @@
 ---
-export const prerender = false;
+// export const prerender = true;
 
 import Base from "@/layouts/Base.astro";
 import { markdownify } from "@/lib/utils/textConverter";
@@ -30,56 +30,45 @@ const { title, description, info } = entry?.data;
 
 
   document.addEventListener('DOMContentLoaded', () => {
-  const form = document.getElementById('contact-form');
-  if (form) {
-    console.log('Contact form found');
-    const campaignURL = getCookie('__gtm_campaign_url');
-    let utmParams = {};
-    if (campaignURL) {
-      utmParams = getUTMParametersFromCookie(decodeURIComponent(campaignURL));
-      ['utm_source', 'utm_medium', 'utm_campaign'].forEach(param => {
-        const input = document.getElementById(param);
-        if (input) {
-          input.value = utmParams[param] || '';
+    const form = document.getElementById('contact-form');
+    if (form) {
+      const campaignURL = getCookie('__gtm_campaign_url');
+      let utmParams = {};
+      if (campaignURL) {
+        utmParams = getUTMParametersFromCookie(decodeURIComponent(campaignURL));
+        ['utm_source', 'utm_medium', 'utm_campaign'].forEach(param => {
+          const input = document.getElementById(param);
+          if (input) {
+            input.value = utmParams[param] || '';
+          }
+        });
+      }
+
+      form.addEventListener('submit', async (event) => {
+        event.preventDefault(); // Prevent default form submission
+
+        const formData = new FormData(form);
+
+        try {
+          const response = await fetch(form.action, {
+            method: form.method,
+            body: formData
+          });
+
+          if (response.ok) {
+            alert('Form submitted successfully!');
+            form.reset(); // Reset the form after successful submission
+          } else {
+            const errorText = await response.text();
+            console.error('Failed to submit the form:', errorText);
+            alert('Failed to submit the form. Please try again.');
+          }
+        } catch (error) {
+          console.error('Error submitting the form:', error);
+          alert('An error occurred while submitting the form. Please try again.');
         }
       });
-    }
 
-    form.addEventListener('submit', async (event) => {
-      event.preventDefault(); // Prevent default form submission
-      console.log('Form submission started');
-
-      const formData = new FormData(form);
-
-      // Log form data (be cautious with sensitive information in production)
-      for (let [key, value] of formData.entries()) {
-        console.log(`${key}: ${value}`);
-      }
-
-      try {
-        console.log('Sending fetch request to /api/sendemail');
-        const response = await fetch('/api/sendemail', {
-          method: "POST",
-          body: formData
-        });
-
-        console.log('Response status:', response.status);
-        const responseBody = await response.text();
-        console.log('Response body:', responseBody);
-
-        if (response.ok) {
-          console.log('Form submitted successfully, redirecting to /thankyou');
-          window.location.href = "/thankyou"; // Redirect to /thankyou
-          form.reset(); // Reset the form after successful submission
-        } else {
-          console.error('Failed to submit the form:', response.status, responseBody);
-          alert(`Failed to submit the form. Server responded with status ${response.status}. Please try again.`);
-        }
-      } catch (error) {
-        console.error('Error submitting the form:', error);
-        alert('An error occurred while submitting the form. Please check your connection and try again.');
-      }
-    });
   } else {
     console.error("Form not found in inline script");
   }
@@ -104,7 +93,7 @@ const { title, description, info } = entry?.data;
       <h1 class="text-center font-normal" set:html={markdownify(title)} />
       <div class="section row pb-0">
         <div class="col-12 md:col-6 lg:col-7">
-          <form id="contact-form" class="contact-form" method="POST" data-cfasync="false">
+          <form id="contact-form" class="contact-form" method="post" action="/api/sendemail">
             <div class="mb-3">
               <input class="form-input w-full rounded" id="name" name="name" type="text" placeholder="Name" required />
             </div>
