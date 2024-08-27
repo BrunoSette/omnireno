@@ -16,7 +16,8 @@ const { title, description, info } = entry?.data;
   }
 
   function getUTMParametersFromCookie(cookieValue) {
-    const urlParams = new URLSearchParams(cookieValue);
+    const url = new URL(decodeURIComponent(cookieValue));
+    const urlParams = new URLSearchParams(url.search);
     const utmParams = {};
     ['utm_source', 'utm_medium', 'utm_campaign'].forEach(param => {
       if (urlParams.has(param)) {
@@ -35,7 +36,7 @@ const { title, description, info } = entry?.data;
       const campaignURL = getCookie('__gtm_campaign_url');
       let utmParams = {};
       if (campaignURL) {
-        utmParams = getUTMParametersFromCookie(decodeURIComponent(campaignURL));
+        utmParams = getUTMParametersFromCookie(campaignURL);
         ['utm_source', 'utm_medium', 'utm_campaign'].forEach(param => {
           const input = document.getElementById(param);
           if (input) {
