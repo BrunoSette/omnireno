@@ -1,13 +1,14 @@
 ---
+// export const prerender = true;
+
 import Base from "@/layouts/Base.astro";
 import { markdownify } from "@/lib/utils/textConverter";
 import { getEntry } from "astro:content";
-
 const entry = await getEntry("contact", "index");
 const { title, description, info } = entry?.data;
 ---
 
-<script is:inline>
+<script is:inline data-cfasync="false">
   function getCookie(name) {
     const value = `; ${document.cookie}`;
     const parts = value.split(`; ${name}=`);
@@ -15,7 +16,8 @@ const { title, description, info } = entry?.data;
   }
 
   function getUTMParametersFromCookie(cookieValue) {
-    const urlParams = new URLSearchParams(cookieValue);
+    const url = new URL(decodeURIComponent(cookieValue));
+    const urlParams = new URLSearchParams(url.search);
     const utmParams = {};
     ['utm_source', 'utm_medium', 'utm_campaign'].forEach(param => {
       if (urlParams.has(param)) {
@@ -24,6 +26,9 @@ const { title, description, info } = entry?.data;
     });
     return utmParams;
   }
+
+  console.log('Contact form script loaded');
+
 
   document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('contact-form');
@@ -44,16 +49,15 @@ const { title, description, info } = entry?.data;
         event.preventDefault(); // Prevent default form submission
 
         const formData = new FormData(form);
-        console.log('Form Data:', Object.fromEntries(formData.entries())); // Log form data
 
         try {
           const response = await fetch(form.action, {
             method: form.method,
-            body: formData,
+            body: formData
           });
 
           if (response.ok) {
-            alert('Form submitted successfully!');
+            window.location.href = "/thankyou"; // Redirect to /thankyou
             form.reset(); // Reset the form after successful submission
           } else {
             const errorText = await response.text();
@@ -65,10 +69,23 @@ const { title, description, info } = entry?.data;
           alert('An error occurred while submitting the form. Please try again.');
         }
       });
-    } else {
-      console.error("Form not found in inline script");
+
+  } else {
+    console.error("Form not found in inline script");
+  }
+});
+
+  function formatCurrency(input) {
+    let value = input.value.replace(/[^0-9.]/g, '');
+    let parts = value.split('.');
+    let integerPart = parts[0];
+    let decimalPart = parts.length > 1 ? parts[1] : '';
+    integerPart = integerPart.replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+    if (decimalPart.length > 2) {
+      decimalPart = decimalPart.substring(0, 2);
     }
-  });
+    input.value = decimalPart ? `${integerPart}.${decimalPart}` : integerPart;
+  }
 </script>
 
 <Base title={title} description={description}>
@@ -77,7 +94,7 @@ const { title, description, info } = entry?.data;
       <h1 class="text-center font-normal" set:html={markdownify(title)} />
       <div class="section row pb-0">
         <div class="col-12 md:col-6 lg:col-7">
-          <form id="contact-form" class="contact-form" method="POST" action="/api/sendemail">
+          <form id="contact-form" class="contact-form" method="post" action="/api/sendemail">
             <div class="mb-3">
               <input class="form-input w-full rounded" id="name" name="name" type="text" placeholder="Name" required />
             </div>
@@ -101,7 +118,7 @@ const { title, description, info } = entry?.data;
               <label class="block mb-2" for="budget">Budget:</label>
               <div class="relative">
                 <span class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">C$</span>
-                <input id="budget" name="budget" type="text" class="form-input w-full pl-10 rounded" placeholder="" />
+                <input id="budget" name="budget" type="text" class="form-input w-full pl-10 rounded" placeholder="" value="10000" oninput="formatCurrency(this)" />
               </div>
             </div>
             <div class="mb-3">
