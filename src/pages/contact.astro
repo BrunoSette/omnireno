@@ -57,7 +57,7 @@ const { title, description, info } = entry?.data;
           });
 
           if (response.ok) {
-            alert('Form submitted successfully!');
+            window.location.href = "/thankyou"; // Redirect to /thankyou
             form.reset(); // Reset the form after successful submission
           } else {
             const errorText = await response.text();
