@@ -21,8 +21,9 @@ const { footer_content, copyright } = config.params;
               <ul class="mt-6">
                 {col?.menu.map((item) => (
                   <li class="mb-1">
-                    <a href={item.url} rel="">
+                    <a href={item.url} rel="" data-astro-reload>
                       {item.text}
+
                     </a>
                   </li>
                 ))}
