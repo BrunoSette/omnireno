@@ -19,6 +19,6 @@
       "@/*": ["./src/*"],
     },
   },
-  "include": ["**/*.ts", "**/*.tsx", "**/*.astro"],
+  "include": ["**/*.ts", "**/*.tsx", "**/*.astro", "src/pages/api/sendemail.ts"],
   "exclude": ["node_modules"],
 }
