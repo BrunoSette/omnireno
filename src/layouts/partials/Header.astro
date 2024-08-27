@@ -72,6 +72,7 @@ const { main }: { main: NavigationLink[] } = menu;
                     <li class="nav-dropdown-item">
                       <a
                         href={child.url}
+                        data-astro-reload
                         class={`nav-dropdown-link block ${
                           pathname === child.url && "nav-link-active"
                         }`}
@@ -86,6 +87,7 @@ const { main }: { main: NavigationLink[] } = menu;
               <li class="nav-item">
                 <a
                   href={menu.url}
+                  data-astro-reload
                   class={`nav-link block ${
                     pathname === menu.url && "nav-link-active"
                   }`}
@@ -103,6 +105,7 @@ const { main }: { main: NavigationLink[] } = menu;
             <a
               class="btn btn-primary z-0 ml-auto py-[14px]"
               href={nav_button.link}
+              data-astro-reload
             >
               {nav_button.label}
             </a>

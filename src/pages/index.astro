@@ -6,7 +6,7 @@ import { markdownify } from "@/lib/utils/textConverter";
 import { getEntry } from "astro:content";
 
 const homepage = await getEntry("homepage", "index");
-const { banner, feature, services, workflow, call_to_action } = homepage.data;
+const { banner, feature, call_to_action } = homepage.data;
 ---
 
 <Base>
@@ -24,7 +24,7 @@ const { banner, feature, services, workflow, call_to_action } = homepage.data;
 
           <!-- {
             banner?.button?.enable && (
-              <a class="btn btn-primary mt-4" href={banner.button.link}>
+              <a class="btn btn-primary mt-4" href={banner.button.link} data-astro-reload>
                 {banner.button.label}
               </a>
             )
@@ -57,7 +57,7 @@ const { banner, feature, services, workflow, call_to_action } = homepage.data;
         {
 
        feature!.features.map((item: any, i: number) => (
-           <a href={item.link}>
+           <a href={item.link} data-astro-reload>
   <div class="feature-card rounded-xl bg-white p-5 pb-8 text-center">
     {item.icon && (
       <img
