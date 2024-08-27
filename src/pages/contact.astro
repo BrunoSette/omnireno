@@ -8,7 +8,7 @@ const entry = await getEntry("contact", "index");
 const { title, description, info } = entry?.data;
 ---
 
-<script is:inline>
+<script is:inline data-cfasync="false">
   function getCookie(name) {
     const value = `; ${document.cookie}`;
     const parts = value.split(`; ${name}=`);
@@ -104,7 +104,7 @@ const { title, description, info } = entry?.data;
       <h1 class="text-center font-normal" set:html={markdownify(title)} />
       <div class="section row pb-0">
         <div class="col-12 md:col-6 lg:col-7">
-          <form id="contact-form" class="contact-form" method="POST">
+          <form id="contact-form" class="contact-form" method="POST" data-cfasync="false">
             <div class="mb-3">
               <input class="form-input w-full rounded" id="name" name="name" type="text" placeholder="Name" required />
             </div>
