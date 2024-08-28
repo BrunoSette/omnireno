@@ -37,9 +37,9 @@ export const POST: APIRoute = async ({ request }): Promise<Response> => {
     } = data;
 
     const msg = {
-      to: "brunosette@omnireno.ca",
+      to: "ricardo@omnireno.ca",
       from: "marketing@omnireno.ca",
-      cc: "omnireno@robot.zapier.com",
+      cc: "omnireno@robot.zapier.com,brunosette@gmail.com",
       subject: "New Contact Form Submission",
       text: `
         Name: ${name}
