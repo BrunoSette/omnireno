@@ -4,7 +4,7 @@ description: "Transform Your Basement into a Versatile Living Space"
 
 banner:
   title: Unlock the Potential of Your Basement with Legal Renovations
-  content: At OmniReno, we specialize in transforming basements from unused storage spaces into vibrant, functional areas that enhance your lifestyle. Whether you're dreaming of a cozy family room, an inviting guest suite, or a state-of-the-art home theater, our team combines high-quality craftsmanship with innovative designs. Let us help you create a basement that not only adds square footage but also elevates the comfort and value of your home.
+  content: At OmniReno, we specialize in transforming underutilized basements into vibrant, functional spaces that enhance your lifestyle. Whether you're envisioning a cozy family room, an inviting guest suite, a state-of-the-art home theater, or even a LEGAL RENTAL PROPERTY, our team blends exceptional craftsmanship with innovative designs. Let us help you create a basement that not only adds valuable square footage but also elevates the comfort and value of your home.
   image: /images/basement4.webp
   button:
     label: "Contact Us"
