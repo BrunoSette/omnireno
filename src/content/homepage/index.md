@@ -8,10 +8,10 @@ banner:
 feature:
   title: Services
   features:
-    - name: "Painting"
-      icon: "/images/painting.svg"
-      content: "Residential and commercial interior and exterior painting, including walls, ceilings, trim, and doors."
-      link: /painting
+    - name: "Basement Renovations"
+      icon: "/images/basement.svg"
+      content: "Transforming unfinished basements into comfortable, livable spaces."
+      link: /basements
     - name: "Full House Renovation"
       icon: "/images/painting-home.svg"
       content: "Comprehensive renovation services for entire homes, covering all aspects from start to finish."
@@ -22,10 +22,10 @@ feature:
       icon: "/images/bathroom.svg"
       content: "Complete bathroom and kitchen remodels, including fixtures, tile work, and cabinetry."
       link: /bathrooms
-    - name: "Basement Renovations"
-      icon: "/images/basement.svg"
-      content: "Transforming unfinished basements into comfortable, livable spaces."
-      link: /basements
+    - name: "Painting"
+      icon: "/images/painting.svg"
+      content: "Residential and commercial interior and exterior painting, including walls, ceilings, trim, and doors."
+      link: /painting
     - name: "Flooring and Tiling"
       icon: "/images/drywall.svg"
       content: "Installation of various flooring options and precise tile work for all surfaces."
