@@ -23,10 +23,10 @@ services:
       label: Check it out
       link: /contact
 
-  - title: "Our Process"
-    content: "At OmniReno, we make bathroom renovation seamless. It begins with a personalized consultation to understand your vision, followed by expert design and detailed planning. Our skilled team then brings your ideas to life with precision and care, ensuring minimal disruption. We finish with a thorough inspection, leaving you with a beautifully transformed bathroom, ready for you to enjoy."
+  - title: "Our Partners"
+    content: "At OmniReno, we partner with top brands to enhance your renovation. Sherwin Williams provides high-quality paints, Delux offers stylish fixtures, and Benjamin Moore delivers a range of premium paint options. These collaborations ensure a stunning and durable finish for your transformed space."
     images:
-      - "/images/blueprint.webp"
+      - "/images/painting-logos.png"
     button:
       enable: false
       label: Check it out
