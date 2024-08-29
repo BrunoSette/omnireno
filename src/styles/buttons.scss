@@ -1,3 +1,5 @@
+$color-border: #f5cb5c; // Replace with your border color
+
 .btn {
   @apply inline-block font-primary font-bold border px-7 py-[17px] leading-[18px] transition;
 }
@@ -9,10 +11,10 @@
     @apply w-full h-full rounded-[30px] absolute left-1/2 top-1/2 translate-x-[-50%] translate-y-[-50%] content-[''] bg-primary transition-all duration-300 ease-in-out -z-[1];
   }
   &:hover::after {
-    @apply w-[110%] h-[110%] bg-red-500; /* Change the background color on hover */
+    @apply w-[110%] h-[110%] bg-purple-900; /* Change the background color on hover */
   }
   &:hover {
-    @apply bg-red-500; /* Change the button color on hover */
+    @apply bg-purple-900; /* Change the button color on hover */
   }
 }
 
