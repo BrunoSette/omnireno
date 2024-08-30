@@ -59,7 +59,7 @@ services:
 
 # call_to_action
 call_to_action:
-  title: Transform Your Bathroom Today
+  title: Transform Your Kitchen Today
   content: Get Your Free, No-Obligation Quote and Start Planning Your Dream Space Now!
   image: "/images/happy2.webp"
   button:
