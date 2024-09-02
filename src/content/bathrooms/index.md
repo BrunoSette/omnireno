@@ -7,7 +7,7 @@ banner:
   content: At OmniReno, we turn outdated bathrooms into luxurious, functional spaces. Whether you need a sleek, modern makeover or a timeless, classic redesign, our team delivers high-quality craftsmanship and personalized designs. **Let us create a bathroom that enhances your daily routine and adds value to your home.**
   image: /images/bathroom6.webp
   button:
-    label: "Contact Us"
+    label: "Get a Free Quote"
     link: "/contact"
     enable: true
 
@@ -67,6 +67,6 @@ call_to_action:
   image: "/images/happy2.webp"
   button:
     enable: true
-    label: "Contact Us"
+    label: "Get a Free Quote"
     link: "/contact"
 ---

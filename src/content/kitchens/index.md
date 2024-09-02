@@ -7,7 +7,7 @@ banner:
   content: At OmniReno, we design and build beautiful, functional kitchens tailored to your style and needs. Whether you're updating, redesigning, or remodeling, our expert team provides quality craftsmanship and innovative solutions. Let us turn your kitchen into the heart of your home.
   image: /images/kitchen.webp
   button:
-    label: "Contact Us"
+    label: "Get a Free Quote"
     link: "/contact"
     enable: true
 
@@ -64,6 +64,6 @@ call_to_action:
   image: "/images/happy2.webp"
   button:
     enable: true
-    label: "Contact Us"
+    label: "Get a Free Quote"
     link: "/contact"
 ---

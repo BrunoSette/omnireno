@@ -64,6 +64,6 @@ call_to_action:
   image: "/images/happy2.webp"
   button:
     enable: true
-    label: "Contact Us"
+    label: "Get a Free Quote"
     link: "/contact"
 ---

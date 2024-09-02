@@ -7,7 +7,7 @@ banner:
   content: At OmniReno, we specialize in transforming underutilized basements into vibrant, functional spaces that enhance your lifestyle. Whether you're envisioning a cozy family room, an inviting guest suite, a state-of-the-art home theater, or even a LEGAL RENTAL PROPERTY, our team blends exceptional craftsmanship with innovative designs. Let us help you create a basement that not only adds valuable square footage but also elevates the comfort and value of your home.
   image: /images/basement4.webp
   button:
-    label: "Contact Us"
+    label: "Get a Free Quote"
     link: "/contact"
     enable: true
 
@@ -68,6 +68,6 @@ call_to_action:
   image: "/images/happy2.webp"
   button:
     enable: true
-    label: "Contact Us"
+    label: "Get a Free Quote"
     link: "/contact"
 ---
