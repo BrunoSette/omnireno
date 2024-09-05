@@ -1,9 +1,11 @@
 ---
 import { Image } from "astro:assets";
 import Base from "@/layouts/Base.astro";
-import Cta from "@/layouts/components/Cta.astro";
+// import Cta from "@/layouts/components/Cta.astro";
 import { markdownify } from "@/lib/utils/textConverter";
 import { getEntry } from "astro:content";
+import ContactForm from "@/components/ContactForm.astro";
+
 
 const homepage = await getEntry("homepage", "index");
 const { banner, feature, call_to_action } = homepage.data;
@@ -194,5 +196,6 @@ const { banner, feature, call_to_action } = homepage.data;
 <!-- <div data-wally-widget="66c667311a1ab300147226a3" style="width: 100%; height: 100%;"></div>
 <script is:inline src="https://embed.getwally.net/embed.js"></script> -->
   <!-- Call to Action -->
-  <Cta cta={call_to_action} />
+   <ContactForm />
+  <!-- <Cta cta={call_to_action} /> -->
 </Base>

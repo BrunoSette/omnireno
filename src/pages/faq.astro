@@ -5,6 +5,8 @@ import { getEntry } from "astro:content";
 import type { TPostType } from "@/types";
 const entry = (await getEntry("faq", "index")) as TPostType;
 const { title, description, faqs } = entry.data;
+import ContactForm from "@/components/ContactForm.astro";
+
 ---
 
 <Base title={title} description={description}>
@@ -27,4 +29,6 @@ const { title, description, faqs } = entry.data;
       </div>
     </div>
   </section>
+     <ContactForm />
+
 </Base>

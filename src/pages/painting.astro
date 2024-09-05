@@ -4,6 +4,8 @@ import Base from "@/layouts/Base.astro";
 import Cta from "@/layouts/components/Cta.astro";
 import { markdownify } from "@/lib/utils/textConverter";
 import { getEntry } from "astro:content";
+import ContactForm from "@/components/ContactForm.astro";
+
 
 const homepage = await getEntry("painting", "index");
 const { banner, services, workflow, call_to_action } = homepage.data;
@@ -160,5 +162,7 @@ const { banner, services, workflow, call_to_action } = homepage.data;
   </section> -->
 
   <!-- Call to Action -->
-  <Cta cta={call_to_action} />
+  <!-- <Cta cta={call_to_action} /> -->
+
+   <ContactForm />
 </Base>
