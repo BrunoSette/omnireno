@@ -53,11 +53,10 @@ services:
 
 images:
   - "/images/kitchen10.webp"
-  - "/images/kitchen2.webp"
-  - "/images/kitchen3.webp"
-  - "/images/kitchen4.webp"
+  - "/images/kitchen10.webp"
   - "/images/kitchen11.webp"
-  - "/images/kitchen.jpg"
+  - "/images/kitchen12.webp"
+  - "/images/kitchen13.webp"
 
 # workflow
 # workflow:

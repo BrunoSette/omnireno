@@ -63,13 +63,12 @@ images:
   - "/images/bathroom-j6.webp"
   - "/images/bathroom-j7.webp"
   - "/images/bathroom-j8.webp"
-  - "/images/bathroom3.webp"
-  - "/images/bathroom4.webp"
   - "/images/bathroom5.webp"
-  - "/images/bathroom6.webp"
   - "/images/bathroom7.webp"
   - "/images/bathroom8.webp"
-  - "/images/bathroom9.webp"
+  - "/images/bathroom-j9.webp"
+  - "/images/bathroom-j10.webp"
+  - "/images/bathroom.mp4"
 
 # workflow
 # workflow:

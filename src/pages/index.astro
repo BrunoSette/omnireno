@@ -179,16 +179,23 @@ const { banner, feature, images, call_to_action } = homepage.data;
   <!-- Images -->
 <div class="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
   {
-    images!.map((image: string) => (
+    images!.map((item: string) => (
       <div>
-        <Image
-          class="mx-auto w-full h-48 object-cover"
-          src={image}
-          loading="eager"
-          width={538}
-          height={328}
-          alt=""
-        />
+        {item.endsWith('.mov') || item.endsWith('.mp4')  ? (
+          <video class="mx-auto w-full h-48 object-cover" controls>
+            <source src={item} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        ) : (
+          <Image
+            class="mx-auto w-full h-48 object-cover"
+            src={item}
+            loading="eager"
+            width={538}
+            height={328}
+            alt=""
+          />
+        )}
       </div>
     ))
   }

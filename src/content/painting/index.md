@@ -58,6 +58,10 @@ images:
   - "/images/manjeet6.webp"
   - "/images/manjeet7.webp"
   - "/images/manjeet8.webp"
+  - "/images/manjeet-video.mp4"
+  - "/images/manjeet-video2.mp4"
+  - "/images/manjeet-video3.mp4"
+  - "/images/living3.webp"
 
 # workflow
 # workflow:
