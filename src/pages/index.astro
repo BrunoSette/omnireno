@@ -8,7 +8,7 @@ import ContactForm from "@/components/ContactForm.astro";
 
 
 const homepage = await getEntry("homepage", "index");
-const { banner, feature, call_to_action } = homepage.data;
+const { banner, feature, images, call_to_action } = homepage.data;
 ---
 
 <Base>
@@ -176,6 +176,23 @@ const { banner, feature, call_to_action } = homepage.data;
   </script>
   <!-- ./End service -->
 
+  <!-- Images -->
+<div class="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+  {
+    images!.map((image: string) => (
+      <div>
+        <Image
+          class="mx-auto w-full h-48 object-cover"
+          src={image}
+          loading="eager"
+          width={538}
+          height={328}
+          alt=""
+        />
+      </div>
+    ))
+  }
+</div>
   <!-- Workflow -->
   <!-- <section class="section pb-0">
     <div class="mb-8 text-center">

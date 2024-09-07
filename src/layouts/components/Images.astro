@@ -1,0 +1,24 @@
+---
+import { markdownify } from "@/lib/utils/textConverter";
+import { getEntry } from "astro:content";
+const entry = await getEntry("contact", "index");
+const { title, info } = entry?.data;
+---
+
+
+<div class="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+  {
+    images!.map((image: string) => (
+      <div>
+        <Image
+          class="mx-auto"
+          src={image}
+          loading="eager"
+          width={538}
+          height={328}
+          alt=""
+        />
+      </div>
+    ))
+  }
+</div>

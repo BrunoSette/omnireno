@@ -54,6 +54,23 @@ services:
   #     label: Check it out
   #     link: /contact
 
+images:
+  - "/images/bathroom-j.heic"
+  - "/images/bathroom-j2.webp"
+  - "/images/bathroom-j3.webp"
+  - "/images/bathroom-j4.webp"
+  - "/images/bathroom-j5.webp"
+  - "/images/bathroom-j6.webp"
+  - "/images/bathroom-j7.webp"
+  - "/images/bathroom-j8.webp"
+  - "/images/bathroom3.webp"
+  - "/images/bathroom4.webp"
+  - "/images/bathroom5.webp"
+  - "/images/bathroom6.webp"
+  - "/images/bathroom7.webp"
+  - "/images/bathroom8.webp"
+  - "/images/bathroom9.webp"
+
 # workflow
 # workflow:
 #   title: "Experience the best workflow with us"

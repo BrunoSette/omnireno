@@ -55,6 +55,17 @@ services:
   #     label: Check it out
   #     link: /contact
 
+images:
+  - "/images/basement.heic"
+  - "/images/basement.webp"
+  - "/images/basement2.webp"
+  - "/images/basement3.heic"
+  - "/images/basement3.webp"
+  - "/images/basement4.webp"
+  - "/images/basement4.heic"
+  - "/images/basement5.webp"
+  - "/images/basement11.webp"
+
 # workflow
 # workflow:
 #   title: "Experience the best workflow with us"

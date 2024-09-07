@@ -51,6 +51,14 @@ services:
   #     label: Check it out
   #     link: /contact
 
+images:
+  - "/images/manjeet2.webp"
+  - "/images/manjeet3.webp"
+  - "/images/manjeet5.webp"
+  - "/images/manjeet6.webp"
+  - "/images/manjeet7.webp"
+  - "/images/manjeet8.webp"
+
 # workflow
 # workflow:
 #   title: "Experience the best workflow with us"
