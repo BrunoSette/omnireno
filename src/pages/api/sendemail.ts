@@ -28,8 +28,8 @@ export const POST: APIRoute = async ({ request }): Promise<Response> => {
       name,
       email,
       phone,
-      services,
-      budget,
+      // services,
+      // budget,
       notes,
       utm_source,
       utm_medium,
@@ -39,19 +39,19 @@ export const POST: APIRoute = async ({ request }): Promise<Response> => {
     const msg = {
       to: "ricardo@omnireno.ca",
       from: "marketing@omnireno.ca",
-      cc: "omnireno@robot.zapier.com",
+      cc: "brunosette@gmail.com",
       subject: "New Contact Form Submission",
       text: `
         Name: ${name}
         Email: ${email}
         Phone: ${phone}
-        Services: ${services}
-        Budget: ${budget}
         Notes: ${notes}
         UTM Source: ${utm_source || "N/A"}
         UTM Medium: ${utm_medium || "N/A"}
         UTM Campaign: ${utm_campaign || "N/A"}
       `,
+      // Services: ${services}
+      // Budget: ${budget}
     };
 
     // Send email using SendGrid

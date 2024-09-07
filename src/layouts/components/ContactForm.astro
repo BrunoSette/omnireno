@@ -53,8 +53,8 @@ const { title, info } = entry?.data;
           });
 
           if (response.ok) {
-            window.location.href = "/thankyou"; // Redirect to /thankyou
-            form.reset(); // Reset the form after successful submission
+            window.location.href = "/thankyou";
+            form.reset();
           } else {
             const errorText = await response.text();
             console.error('Failed to submit the form:', errorText);
@@ -71,17 +71,7 @@ const { title, info } = entry?.data;
   }
 });
 
-  function formatCurrency(input) {
-    let value = input.value.replace(/[^0-9.]/g, '');
-    let parts = value.split('.');
-    let integerPart = parts[0];
-    let decimalPart = parts.length > 1 ? parts[1] : '';
-    integerPart = integerPart.replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-    if (decimalPart.length > 2) {
-      decimalPart = decimalPart.substring(0, 2);
-    }
-    input.value = decimalPart ? `${integerPart}.${decimalPart}` : integerPart;
-  }
+
 </script>
 
   <section class="section">
@@ -98,23 +88,6 @@ const { title, info } = entry?.data;
             </div>
             <div class="mb-3">
               <input class="form-input w-full rounded" id="phone" name="phone" type="tel" placeholder="Phone Number" />
-            </div>
-            <div class="mb-3">
-              <label class="block mb-2" for="services">Services:</label>
-              <select id="services" name="services" class="form-select w-full rounded">
-                <option value="Bathroom">Bathroom</option>
-                <option value="Basement">Basement</option>
-                <option value="Kitchen">Kitchen</option>
-                <option value="Painting">Painting</option>
-                <option value="Other">Other</option>
-              </select>
-            </div>
-            <div class="mb-3">
-              <label class="block mb-2" for="budget">Budget:</label>
-              <div class="relative">
-                <span class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">C$</span>
-                <input id="budget" name="budget" type="text" class="form-input w-full pl-10 rounded" placeholder="" value="10000" oninput="formatCurrency(this)" />
-              </div>
             </div>
             <div class="mb-3">
               <textarea class="form-textarea w-full rounded-md" rows="7" name="notes" id="notes" placeholder="Please provide any details or questions you have about your services, and we'll respond promptly."></textarea>
