@@ -78,7 +78,6 @@ images:
   - "/images/bathroom3.webp"
   - "/images/kitchen2.webp"
   - "/images/kitchen3.webp"
-  - "/images/kitchen5.webp"
   - "/images/bathroom5.webp"
   - "/images/bathroom6.webp"
   - "/images/bathroom7.webp"
