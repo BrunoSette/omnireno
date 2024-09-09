@@ -75,12 +75,10 @@ services:
 images:
   - "/images/kitchen.webp"
   - "/images/living.webp"
-  - "/images/living2.webp"
   - "/images/bathroom3.webp"
   - "/images/kitchen2.webp"
   - "/images/kitchen3.webp"
   - "/images/kitchen5.webp"
-  - "/images/bathroom4.webp"
   - "/images/bathroom5.webp"
   - "/images/bathroom6.webp"
   - "/images/bathroom7.webp"
@@ -88,7 +86,6 @@ images:
   - "/images/basement2.webp"
   - "/images/basement3.webp"
   - "/images/basement4.webp"
-  - "/images/worker4.webp"
 
 
 # workflow
