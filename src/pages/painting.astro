@@ -1,7 +1,7 @@
 ---
 import { Image } from "astro:assets";
 import Base from "@/layouts/Base.astro";
-// import Cta from "@/layouts/components/Cta.astro";
+import Cta from "@/layouts/components/Cta.astro";
 import Testimonials from "@/layouts/components/Testimonials.astro";
 
 import { markdownify } from "@/lib/utils/textConverter";
@@ -188,7 +188,7 @@ const { banner, services, images, workflow, call_to_action } = homepage.data;
   </section> -->
 
   <!-- Call to Action -->
-  <!-- <Cta cta={call_to_action} /> -->
   <Testimonials />
+  <Cta cta={call_to_action} />
    <ContactForm />
 </Base>

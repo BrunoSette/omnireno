@@ -33,27 +33,27 @@ services:
       label: Check it out
       link: /contact
 
-  # - title: "A Team Dedicated to Excellence"
-  #   content: "OmniReno’s team is composed of dedicated professionals who bring their expertise to every stage of your basement renovation. From creative designers who understand your vision to skilled craftsmen who bring it to life, our team works together seamlessly to deliver results that are both stunning and durable. Our collaborative approach ensures that every aspect of your renovation is handled with care, precision, and a commitment to exceeding your expectations."
-  #   images:
-  #     - "/images/worker.webp"
-  #     - "/images/worker2.webp"
-  #     - "/images/worker3.webp"
-  #   button:
-  #     enable: true
-  #     label: Check it out
-  #     link: /contact
+  - title: "A Team Dedicated to Excellence"
+    content: "OmniReno’s team is composed of dedicated professionals who bring their expertise to every stage of your basement renovation. From creative designers who understand your vision to skilled craftsmen who bring it to life, our team works together seamlessly to deliver results that are both stunning and durable. Our collaborative approach ensures that every aspect of your renovation is handled with care, precision, and a commitment to exceeding your expectations."
+    images:
+      - "/images/worker.webp"
+      - "/images/worker2.webp"
+      - "/images/worker3.webp"
+    button:
+      enable: true
+      label: Check it out
+      link: /contact
 
-  # - title: "What Sets OmniReno Apart"
-  #   content: "At OmniReno, we go beyond the ordinary to deliver basement renovations that truly stand out. Our focus on integrity and customer satisfaction means we take the time to understand your needs and work tirelessly to bring your vision to life. We pride ourselves on our transparent communication, meticulous attention to detail, and unwavering commitment to quality. With OmniReno, your project is more than just another renovation—it's a partnership aimed at creating a space that enriches your home and your life."
-  #   images:
-  #     - "/images/worker4.webp"
-  #     - "/images/painter2.webp"
-  #     - "/images/worker3.webp"
-  #   button:
-  #     enable: true
-  #     label: Check it out
-  #     link: /contact
+  - title: "What Sets OmniReno Apart"
+    content: "At OmniReno, we go beyond the ordinary to deliver basement renovations that truly stand out. Our focus on integrity and customer satisfaction means we take the time to understand your needs and work tirelessly to bring your vision to life. We pride ourselves on our transparent communication, meticulous attention to detail, and unwavering commitment to quality. With OmniReno, your project is more than just another renovation—it's a partnership aimed at creating a space that enriches your home and your life."
+    images:
+      - "/images/worker4.webp"
+      - "/images/painter2.webp"
+      - "/images/worker3.webp"
+    button:
+      enable: true
+      label: Check it out
+      link: /contact
 
 images:
   - "/images/basement.heic"
@@ -78,7 +78,7 @@ images:
 call_to_action:
   title: Start Your Basement Transformation Today
   content: Ready to turn your basement into the space you’ve always wanted? Contact us for a free, no-obligation consultation, and let’s start planning your dream basement renovation!
-  image: "/images/happy2.webp"
+  image: "/images/basement.webp"
   button:
     enable: true
     label: "Get a Free Quote"
