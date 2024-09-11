@@ -65,6 +65,8 @@ images:
   - "/images/basement4.heic"
   - "/images/basement5.webp"
   - "/images/basement11.webp"
+  - "/images/basement.jpeg"
+  - "/images/basement2.jpeg"
 
 # workflow
 # workflow:

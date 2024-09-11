@@ -73,9 +73,6 @@ services:
   #     link: /contact
 
 images:
-  - "/images/kitchen.webp"
-  - "/images/living.webp"
-  - "/images/bathroom3.webp"
   - "/images/kitchen2.webp"
   - "/images/kitchen3.webp"
   - "/images/bathroom5.webp"
@@ -85,6 +82,22 @@ images:
   - "/images/basement2.webp"
   - "/images/basement3.webp"
   - "/images/basement4.webp"
+  - "/images/basement.jpeg"
+  - "/images/basement2.jpeg"
+  - "/images/basement.heic"
+  - "/images/basement.webp"
+  - "/images/basement2.webp"
+  - "/images/basement3.heic"
+  - "/images/basement3.webp"
+  - "/images/basement4.webp"
+  - "/images/bathroom-j9.webp"
+  - "/images/bathroom-j10.webp"
+  - "/images/bathroom.mp4"
+  - "/images/kitchen10.webp"
+  - "/images/kitchen10.webp"
+  - "/images/kitchen11.webp"
+  - "/images/kitchen12.webp"
+  - "/images/kitchen13.webp"
 
 
 # workflow
