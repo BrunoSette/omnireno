@@ -55,8 +55,6 @@ images:
   - "/images/manjeet2.webp"
   - "/images/manjeet3.webp"
   - "/images/manjeet5.webp"
-  - "/images/manjeet6.webp"
-  - "/images/manjeet7.webp"
   - "/images/manjeet8.webp"
   - "/images/manjeet-video.mp4"
   - "/images/manjeet-video2.mp4"

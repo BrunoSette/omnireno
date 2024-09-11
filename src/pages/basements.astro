@@ -1,7 +1,8 @@
 ---
 import { Image } from "astro:assets";
 import Base from "@/layouts/Base.astro";
-import Cta from "@/layouts/components/Cta.astro";
+// import Cta from "@/layouts/components/Cta.astro";
+import Testimonials from "@/layouts/components/Testimonials.astro";
 import { markdownify } from "@/lib/utils/textConverter";
 import { getEntry } from "astro:content";
 import ContactForm from "@/components/ContactForm.astro";
@@ -171,6 +172,7 @@ const { banner, feature, images, services, workflow, call_to_action } = homepage
     ))
   }
 </div>
+<Testimonials />
   <!-- Workflow -->
   <!-- <section class="section pb-0">
     <div class="mb-8 text-center">
