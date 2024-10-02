@@ -78,6 +78,7 @@ images:
   - "/images/bathroom5.webp"
   - "/images/bathroom6.webp"
   - "/images/bathroom7.webp"
+  - "/images/kitchen.mp4"
   - "/images/basement.webp"
   - "/images/basement2.webp"
   - "/images/basement3.webp"
@@ -98,6 +99,12 @@ images:
   - "/images/kitchen11.webp"
   - "/images/kitchen12.webp"
   - "/images/kitchen13.webp"
+  - "/images/bathroom2.jpeg"
+  - "/images/bathroom3.jpeg"
+  - "/images/bathroom4.jpeg"
+  - "/images/bathroom5.jpeg"
+  - "/images/bathroom12.jpeg"
+  
 
 
 # workflow

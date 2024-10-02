@@ -55,6 +55,15 @@ services:
       link: /contact
 
 images:
+  - "/images/bathroom.mp4"
+  - "/images/bathroom2.mp4"
+  - "/images/bathroom.jpeg"
+  - "/images/bathroom3.mp4"
+  - "/images/bathroom2.jpeg"
+  - "/images/bathroom3.jpeg"
+  - "/images/bathroom4.jpeg"
+  - "/images/bathroom5.jpeg"
+  - "/images/bathroom12.jpeg"
   - "/images/bathroom-j.heic"
   - "/images/bathroom-j2.webp"
   - "/images/bathroom-j3.webp"
@@ -66,6 +75,7 @@ images:
   - "/images/bathroom5.webp"
   - "/images/bathroom7.webp"
   - "/images/bathroom8.webp"
+  - "/images/bathroom4.jpeg"
   - "/images/bathroom-j9.webp"
   - "/images/bathroom-j10.webp"
   - "/images/bathroom.mp4"

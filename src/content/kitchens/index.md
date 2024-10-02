@@ -52,7 +52,7 @@ services:
       link: /contact
 
 images:
-  - "/images/kitchen10.webp"
+  - "/images/kitchen.mp4"
   - "/images/kitchen10.webp"
   - "/images/kitchen11.webp"
   - "/images/kitchen12.webp"
