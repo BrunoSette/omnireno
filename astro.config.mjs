@@ -10,6 +10,7 @@ import config from "./src/config/config.json";
 import vercel from "@astrojs/vercel/serverless";
 import sitemap from "@astrojs/sitemap";
 import sharp from "sharp";
+import sentry from "@sentry/astro";
 
 // https://astro.build/config
 export default defineConfig({
@@ -23,6 +24,13 @@ export default defineConfig({
   },
   integrations: [
     react(),
+    sentry({
+      dsn: "https://bf32ad7da6eca09a4bd543960427cd7c@o4508059553955840.ingest.us.sentry.io/4508061763502080",
+      sourceMapsUploadOptions: {
+        project: "omnireno",
+        authToken: process.env.SENTRY_AUTH_TOKEN,
+      },
+    }),
     sitemap(),
     tailwind({
       config: {
