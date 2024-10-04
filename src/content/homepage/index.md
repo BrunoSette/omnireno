@@ -4,7 +4,7 @@ banner:
   content: "At OmniReno, we pride ourselves on delivering exceptional renovations you can trust. With a commitment to quality craftsmanship and transparent communication, we transform your home with integrity and care. Whether it's a kitchen, bathroom, basement or any other renovation, trust us to bring your vision to life with precision and professionalism.<br><br>
 
 The name \"OmniReno\" reflects our all-encompassing approach to renovations. \"Omni\" means \"all\" or \"for everyone,\" highlighting our dedication to meeting all your renovation needs, no matter the size or scope of the project. Omni is for all, and all kinds of renovations."
-  image: /images/living.webp
+  image: /images/mainPhoto.jpeg
 
 # feature
 feature:
