@@ -3,11 +3,10 @@ import { Image } from "astro:assets";
 import Base from "@/layouts/Base.astro";
 import Cta from "@/layouts/components/Cta.astro";
 import Testimonials from "@/layouts/components/Testimonials.astro";
-
 import { markdownify } from "@/lib/utils/textConverter";
 import { getEntry } from "astro:content";
 import ContactForm from "@/components/ContactForm.astro";
-
+import { openLightbox, initializeLightbox } from "@/lib/lightbox";
 
 const homepage = await getEntry("painting", "index");
 const { banner, services, images, workflow, call_to_action } = homepage.data;
@@ -146,29 +145,49 @@ const { banner, services, images, workflow, call_to_action } = homepage.data;
   <!-- ./End service -->
 
   <!-- Images -->
-<div class="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-  {
-    images!.map((item: string) => (
-      <div>
-        {item.endsWith('.mov') || item.endsWith('.mp4')  ? (
-          <video class="mx-auto w-full h-48 object-cover" controls>
-            <source src={item} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        ) : (
-          <Image
-            class="mx-auto w-full h-48 object-cover"
-            src={item}
-            loading="eager"
-            width={538}
-            height={328}
-            alt=""
-          />
-        )}
-      </div>
-    ))
-  }
-</div>
+  <div class="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+    {
+      images!.map((item: string) => (
+        <div>
+          <div class="cursor-pointer" onclick={`window.openLightbox('${item}')`}>
+            {item.endsWith('.mov') || item.endsWith('.mp4') ? (
+              <video class="mx-auto w-full h-48 object-cover" controls>
+                <source src={item} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            ) : (
+              <Image
+                class="mx-auto w-full h-48 object-cover"
+                src={item}
+                loading="eager"
+                width={538}
+                height={328}
+                alt=""
+              />
+            )}
+          </div>
+        </div>
+      ))
+    }
+  </div>
+
+  <div id="lightbox" class="fixed inset-0 bg-black bg-opacity-75 hidden flex items-center justify-center z-50">
+    <img id="lightbox-image" src="" alt="" class="max-w-[90%] max-h-[90%] object-contain hidden" />
+    <video id="lightbox-video" class="max-w-[90%] max-h-[90%] object-contain hidden" controls></video>
+    <button id="close-lightbox" class="absolute top-4 right-4 text-white text-2xl">&times;</button>
+  </div>
+
+  <script>
+    import { openLightbox, initializeLightbox } from "@/lib/lightbox";
+
+    // Expose the openLightbox function to the global window object
+    window.openLightbox = openLightbox;
+
+    document.addEventListener('astro:page-load', () => {
+      initializeLightbox();
+    });
+  </script>
+
   <!-- Workflow -->
   <!-- <section class="section pb-0">
     <div class="mb-8 text-center">
@@ -190,5 +209,5 @@ const { banner, services, images, workflow, call_to_action } = homepage.data;
   <!-- Call to Action -->
   <Testimonials />
   <Cta cta={call_to_action} />
-   <ContactForm />
+  <ContactForm />
 </Base>
