@@ -4,25 +4,60 @@ import PostSingle from "@/layouts/PostSingle.astro";
 import { getSinglePage } from "@/lib/contentParser.astro";
 import config from "@/config/config.json";
 
+export const prerender = true;
+
+interface BlogPost {
+  data: {
+    title: string;
+    meta_title?: string;
+    description?: string;
+    image?: string;
+  };
+  slug?: string;
+  id?: string;
+}
+
 export async function getStaticPaths() {
   const { blog_folder } = config.settings;
-  const posts = await getSinglePage(blog_folder as any);
 
-  const paths = posts.map((post: any) => ({
-    params: {
-      single: post.slug,
-    },
-    props: { post },
-  }));
+
+  const posts = await getSinglePage(blog_folder as any) as BlogPost[];
+
+
+  const paths = posts.map((post: BlogPost) => {
+    // Create slug from title if not available
+    const slug = post.data.title
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, '-')
+      .replace(/^-|-$/g, '')
+      .trim();
+
+
+    return {
+      params: { single: slug },
+      props: { post }
+    };
+  });
+
+
   return paths;
 }
 
+// Debug: Log current request details
+const currentUrl = Astro.url.pathname;
 const { post } = Astro.props;
+
+
+if (!post) {
+  console.log("No post found for path:", currentUrl);
+  return Astro.redirect('/404');
+}
+
 const { title, meta_title, description, image } = post.data;
 ---
 
 <Base
-  title={title}
+  title={title || "Blog Post"}
   meta_title={meta_title}
   description={description}
   image={image}

@@ -1,4 +1,4 @@
 ---
-title: "Latests Crafts"
-description: "this is meta description"
+title: "Our Blog"
+description: "Learn more about our products and services"
 ---
