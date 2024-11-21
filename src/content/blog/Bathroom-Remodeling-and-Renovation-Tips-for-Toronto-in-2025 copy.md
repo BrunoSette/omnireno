@@ -1,7 +1,7 @@
 ---
-title: "Bathroom Tips 2025"
+title: "Bathroom Remodeling and Renovation Tips for Toronto in 2025"
 description: "Transform your Toronto bathroom in 2025 with expert tips on design, sustainability, and functionality. Discover trends, smart tech, and practical ideas to elevate your space!"
-image: "/images/kitchen3.webp"
+image: "/images/bathroom3.webp"
 meta_title: "Bathroom Remodeling and Renovation Tips Toronto 2025"
 meta_description: "Transform your Toronto bathroom in 2025 with expert tips on design, sustainability, and functionality. Discover trends, smart tech, and practical ideas to elevate your space!"
 date: 2024-03-15T05:00:00Z

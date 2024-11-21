@@ -3,6 +3,7 @@ import Base from "@/layouts/Base.astro";
 import PostSingle from "@/layouts/PostSingle.astro";
 import { getSinglePage } from "@/lib/contentParser.astro";
 import config from "@/config/config.json";
+import ContactForm from "@/components/ContactForm.astro";
 
 export const prerender = true;
 
@@ -63,4 +64,5 @@ const { title, meta_title, description, image } = post.data;
   image={image}
 >
   <PostSingle post={post} />
+    <ContactForm />
 </Base>
